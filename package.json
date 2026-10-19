@@ -1,0 +1,13 @@
+{
+  "name": "sams", "private": true, "version": "1.0.0", "type": "module",
+  "workspaces": ["apps/web", "apps/api"],
+  "engines": {"node": ">=22.12.0"},
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspaces",
+    "check": "npm run check --workspaces",
+    "test": "npm run test --workspace apps/api",
+    "audit:data": "python -m services.ml.pipeline all",
+    "verify:data": "python -m services.ml.pipeline verify"
+  }
+}

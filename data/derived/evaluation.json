@@ -1,0 +1,2895 @@
+{
+  "schema_version": 1,
+  "model_version": "314a27cadc8c",
+  "dataset_version": "56fd2a89b9e4",
+  "seed": 42,
+  "python": "3.10.9",
+  "sklearn": "1.3.2",
+  "target_90_established": false,
+  "metric_policy": "Primary: MAE in target units. Also RMSE, pooled OOF R\u00b2 and fraction within \u00b110% (absolute floors: delay 0.1 ps, energy 0.1 fJ, power 0.001 uW, SNM 1 mV). Frozen before training. 90% target = at least 90% within tolerance on independent final cases; none exist.",
+  "selection_policy": "Fixed ridge alpha=0.1 deployed for exploratory use; all candidates reported, no winner chosen on validation results. No final test set or broad generalization claim.",
+  "targets": {
+    "write0_ps": {
+      "n_cases": 8,
+      "n_groups": 4,
+      "features": [
+        "vdd_v",
+        "temp_c",
+        "mode"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 3.300664661376807,
+          "rmse": 3.5076113876106545,
+          "r2": -0.7777777713384377,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 18.47473895826045,
+              "error": -1.9835462250438702,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 18.47473895826045,
+              "error": -1.9843187003114586,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 19.53558588123831,
+              "error": 2.259515846382328,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 19.53558588123831,
+              "error": 2.2593946120852166,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 17.816372858910878,
+              "error": -4.617501058836499,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 17.816372858910878,
+              "error": -4.6172926613154,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 20.056190597309826,
+              "error": 4.341618210038009,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 20.056190597309826,
+              "error": 4.342129977001674,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 0.4132841498341613,
+          "rmse": 0.4132842720558469,
+          "r2": 0.9753195948297163,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 20.872055392470216,
+              "error": 0.4137702091658966,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 20.87185574907433,
+              "error": 0.4127980905024238,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 17.689406083374895,
+              "error": 0.41333604851891437,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 17.6894235203025,
+              "error": 0.41323225114940954,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 22.02042191205249,
+              "error": -0.4134520056948858,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 22.02054922625284,
+              "error": -0.4131162939734381,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 15.30091813528189,
+              "error": -0.4136542519899269,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 15.301146572629756,
+              "error": -0.41291404767839524,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 0.4043963186549322,
+          "rmse": 0.41990400679883905,
+          "r2": 0.974522631630084,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 20.794724187903398,
+              "error": 0.33643900459907883,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 20.79452781735007,
+              "error": 0.3354701587781612,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 17.748960132087614,
+              "error": 0.4728900972316339,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 17.74897728316395,
+              "error": 0.4727860140108575,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 21.884806416571458,
+              "error": -0.5490675011759194,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 21.88493164365376,
+              "error": -0.5487338765725163,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 15.454312209117683,
+              "error": -0.2602601781541338,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 15.454536901590995,
+              "error": -0.2595237187171566,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 2.4754984960326056,
+          "rmse": 2.6367884411126803,
+          "r2": -0.0046275908058619475,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 19.074223152509596,
+              "error": -1.3840620307947233,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 19.073863070267215,
+              "error": -1.3851945883046923,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 19.074223152509596,
+              "error": 1.7981531176536159,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 19.073863070267215,
+              "error": 1.7976718011141237,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 18.867177609080148,
+              "error": -3.566696308667229,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 18.867624463862498,
+              "error": -3.5660410563637797,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 18.86717760908015,
+              "error": 3.1526052218083347,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 18.867624463862498,
+              "error": 3.1535638435543465,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 3.1083875831254684,
+          "rmse": 3.3043119663978913,
+          "r2": -0.5776716270651696,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 18.6144251560713,
+              "error": -1.8438600272330206,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 18.61434790459616,
+              "error": -1.8447097539757493,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 19.428081185248917,
+              "error": 2.152011150392937,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 19.427996699165572,
+              "error": 2.1518054300124803,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 18.061229502649713,
+              "error": -4.372644415097664,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 18.061329384030838,
+              "error": -4.37233613619544,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 19.77913512420676,
+              "error": 4.064562736934944,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 19.779231635469664,
+              "error": 4.065171015161512,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 2.6475477317097935,
+          "rmse": 2.863792227668403,
+          "r2": -0.1850523642630939,
+          "within_10pct": 0.5,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 20.45828518330432,
+              "predicted": 18.859294021357233,
+              "error": -1.5989911619470867,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 20.459057658571908,
+              "predicted": 19.023368247940116,
+              "error": -1.4356894106317917,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 17.27607003485598,
+              "predicted": 18.79821724502384,
+              "error": 1.5221472101678586,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 17.27619126915309,
+              "predicted": 18.95435872716956,
+              "error": 1.6781674580164676,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 22.433873917747377,
+              "predicted": 18.662271451218132,
+              "error": -3.771602466529245,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 22.433665520226278,
+              "predicted": 18.61198365410619,
+              "error": -3.8216818661200875,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 15.714572387271817,
+              "predicted": 19.424909082480905,
+              "error": 3.7103366952090884,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 15.714060620308151,
+              "predicted": 19.355826205364874,
+              "error": 3.6417655850567225,
+              "group": "active:1.0:27"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ],
+          "validation": [
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ]
+        },
+        {
+          "train": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 0,
+        "total_cases": 8,
+        "individual": [
+          {
+            "id": "e7558dd4a27ea6c9",
+            "predicted": null,
+            "measured": 17.27607003485598,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "8ee0e512068f4173",
+            "predicted": null,
+            "measured": 17.27619126915309,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "9f60ee4bb8cb10a0",
+            "predicted": null,
+            "measured": 22.433873917747377,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "4bcb361e507d93a8",
+            "predicted": null,
+            "measured": 22.433665520226278,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "235bae567fbb388f",
+            "predicted": null,
+            "measured": 15.714572387271817,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "14e634dff1ca06fd",
+            "predicted": null,
+            "measured": 15.714060620308151,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "792d79023d8ebb2b",
+            "predicted": null,
+            "measured": 20.45828518330432,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "ba8f8b35d02fd44f",
+            "predicted": null,
+            "measured": 20.459057658571908,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": null,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vdd_v": [
+          0.9,
+          1.0
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ],
+        "mode": [
+          0.0,
+          1.0
+        ]
+      },
+      "residual_envelope": 0.5490675011759194,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    },
+    "write1_ps": {
+      "n_cases": 8,
+      "n_groups": 4,
+      "features": [
+        "vdd_v",
+        "temp_c",
+        "mode"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 5.235935169813075,
+          "rmse": 5.7549931236857965,
+          "r2": -0.7777777679792881,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 32.616797032348565,
+              "error": -2.6007512997102324,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 32.616797032348565,
+              "error": -2.5995647798785555,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 34.047702452914486,
+              "error": 3.1232528196843994,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 34.047702452914486,
+              "error": 3.123674465254151,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 31.298908467339228,
+              "error": -7.871686515273691,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 31.298908467339228,
+              "error": -7.871738084389829,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 35.103938216586386,
+              "error": 7.34767066904368,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 35.103938216586386,
+              "error": 7.349142725270063,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 0.7849584040123321,
+          "rmse": 0.7849585074883813,
+          "r2": 0.9669264164028597,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 36.00222049826862,
+              "error": 0.7846721662098233,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 36.001606454041955,
+              "error": 0.7852446418148347,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 31.709631715614528,
+              "error": 0.7851820823844413,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 31.708762713300555,
+              "error": 0.7847347256402202,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 38.38617573342995,
+              "error": -0.7844192491829673,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 38.38514899288735,
+              "error": -0.7854975588417048,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 26.970832548131398,
+              "error": -0.7854349994113079,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 26.970313682702965,
+              "error": -0.7844818086133571,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 0.7680775781195921,
+          "rmse": 0.7901494351740257,
+          "r2": 0.9664875390679482,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 35.893018160480295,
+              "error": 0.6754698284214982,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 35.89241418255243,
+              "error": 0.6760523703253085,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 31.785060245498194,
+              "error": 0.8606106122681076,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 31.784205489123792,
+              "error": 0.8601775014634576,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 38.1575623531426,
+              "error": -1.0130326294703167,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 38.15655244441217,
+              "error": -1.014094107316886,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 27.23319491130283,
+              "error": -0.5230726362398741,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 27.232684551865034,
+              "error": -0.522110939451288,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 3.9269513773598055,
+          "rmse": 4.329607308602519,
+          "r2": -0.006201287684939105,
+          "within_10pct": 0.5,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 33.463431265077816,
+              "error": -1.7541170669809816,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 33.46272102152269,
+              "error": -1.7536407907044307,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 33.463431265077816,
+              "error": 2.5389816318477294,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 33.46272102152269,
+              "error": 2.538693033862355,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 33.07099898264444,
+              "error": -6.099595999968479,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 33.07019489994373,
+              "error": -6.1004516517853276,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 33.07099898264444,
+              "error": 5.314731435101734,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 33.07019489994373,
+              "error": 5.315399408627407,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 4.930920750097643,
+          "rmse": 5.422012895033042,
+          "r2": -0.5780070710532832,
+          "within_10pct": 0.5,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 32.814066285813624,
+              "error": -2.4034820462451734,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 32.813921251793424,
+              "error": -2.4024405604336962,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 33.91154332458715,
+              "error": 2.987093691357064,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 33.91140678752255,
+              "error": 2.987378799862217,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 31.71181714340309,
+              "error": -7.45877783920983,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 31.71166399722718,
+              "error": -7.458982554501876,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 34.63022181004764,
+              "error": 6.873954262504931,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 34.630051737982676,
+              "error": 6.875256246666353,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 4.149702497707472,
+          "rmse": 4.732053372083633,
+          "r2": -0.20195199146827703,
+          "within_10pct": 0.5,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 35.2175483320588,
+              "predicted": 33.300489048576466,
+              "error": -1.917059283482331,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 35.21636181222712,
+              "predicted": 33.57790620843641,
+              "error": -1.6384556037907103,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 30.924449633230086,
+              "predicted": 32.778180357098975,
+              "error": 1.853730723868889,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 30.924027987660335,
+              "predicted": 33.044837999612675,
+              "error": 2.12081001195234,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 39.17059498261292,
+              "predicted": 32.60876211245259,
+              "error": -6.56183287016033,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 39.17064655172906,
+              "predicted": 32.53718094661166,
+              "error": -6.633465605117394,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 27.756267547542706,
+              "predicted": 34.0453272437095,
+              "error": 6.289059696166795,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 27.754795491316322,
+              "predicted": 33.93800167843731,
+              "error": 6.183206187120987,
+              "group": "active:1.0:27"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ],
+          "validation": [
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ]
+        },
+        {
+          "train": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 0,
+        "total_cases": 8,
+        "individual": [
+          {
+            "id": "e7558dd4a27ea6c9",
+            "predicted": null,
+            "measured": 30.924449633230086,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "8ee0e512068f4173",
+            "predicted": null,
+            "measured": 30.924027987660335,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "9f60ee4bb8cb10a0",
+            "predicted": null,
+            "measured": 39.17059498261292,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "4bcb361e507d93a8",
+            "predicted": null,
+            "measured": 39.17064655172906,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "235bae567fbb388f",
+            "predicted": null,
+            "measured": 27.756267547542706,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "14e634dff1ca06fd",
+            "predicted": null,
+            "measured": 27.754795491316322,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "792d79023d8ebb2b",
+            "predicted": null,
+            "measured": 35.2175483320588,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "ba8f8b35d02fd44f",
+            "predicted": null,
+            "measured": 35.21636181222712,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": null,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vdd_v": [
+          0.9,
+          1.0
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ],
+        "mode": [
+          0.0,
+          1.0
+        ]
+      },
+      "residual_envelope": 1.014094107316886,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    },
+    "active_energy_fj": {
+      "n_cases": 8,
+      "n_groups": 4,
+      "features": [
+        "vdd_v",
+        "temp_c",
+        "mode"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 29.983974931538764,
+          "rmse": 30.710332772565597,
+          "r2": -0.7767529087639722,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 177.16825782328178,
+              "error": -38.60142107144591,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 177.16825782328178,
+              "error": -36.13309120835521,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 195.42600918848964,
+              "error": 35.259054090366476,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 195.42600918848964,
+              "error": 36.06844455149539,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 192.58612199379354,
+              "error": 23.456821106988002,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 192.58612199379354,
+              "error": 25.151579977305175,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 180.85989842746267,
+              "error": -23.227427302116666,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 180.85989842746267,
+              "error": -21.97396014423728,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 2.555260228454454,
+          "rmse": 2.5876790178822358,
+          "r2": 0.9873852456151654,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 212.60652314961547,
+              "error": -3.1631557451122205,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 211.35398431984032,
+              "error": -1.9473647117966664,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 158.1097589543188,
+              "error": -2.0571961438043616,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 156.3042403238897,
+              "error": -3.0533243131045538,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 171.59237959378456,
+              "error": 2.4630787069790188,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 170.0819837664182,
+              "error": 2.6474417499298397,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 206.84459891151693,
+              "error": 2.7572731819375917,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 205.18710584667133,
+              "error": 2.3532472749713804,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 2.500308395584465,
+          "rmse": 2.7197399196337946,
+          "r2": 0.9860648148989986,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 211.47328882784936,
+              "error": -4.296390066878331,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 210.24128342151312,
+              "error": -3.0600656101238712,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 159.3278308970691,
+              "error": -0.8391242010540623,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 157.55191093271264,
+              "error": -1.8056537042816103,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 172.28157801991412,
+              "error": 3.1522771331085835,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 170.79594277988167,
+              "error": 3.3614007633933056,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 206.01953051725218,
+              "error": 1.9322047876728448,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 204.38920946986306,
+              "error": 1.5553508981631126,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 22.48798119865408,
+          "rmse": 23.052922628883817,
+          "r2": -0.0011749520106918432,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 186.60831330819244,
+              "error": -29.161365586535254,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 185.13420029409414,
+              "error": -28.167148737542846,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 186.60831330819244,
+              "error": 26.441358210069268,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 185.13420029409417,
+              "error": 25.776635657099916,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 187.96831699642541,
+              "error": 18.839016109619877,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 186.3294568343156,
+              "error": 18.894914817827242,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 187.96831699642544,
+              "error": -16.11900873315389,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 186.3294568343156,
+              "error": -16.50440173738434,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 28.237287010872272,
+          "rmse": 28.92342583061287,
+          "r2": -0.5760045010417514,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 179.34707195357998,
+              "error": -36.422606941147706,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 179.04532306799302,
+              "error": -34.256025963643964,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 193.34125706353365,
+              "error": 33.17430196541048,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 193.0579372651217,
+              "error": 33.70037262812744,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 191.4849302059748,
+              "error": 22.355629319169253,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 191.15338614727025,
+              "error": 23.71884413078189,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 182.48865546522205,
+              "error": -21.59867026435728,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 182.16201369735978,
+              "error": -20.671844874340167,
+              "group": "active:1.0:27"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 23.787468345778546,
+          "rmse": 24.651901673108256,
+          "r2": -0.14487703487473658,
+          "within_10pct": 0.25,
+          "individual": [
+            {
+              "id": "792d79023d8ebb2b",
+              "measured": 215.7696788947277,
+              "predicted": 184.86754645227623,
+              "error": -30.90213244245146,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "ba8f8b35d02fd44f",
+              "measured": 213.301349031637,
+              "predicted": 183.79128393758026,
+              "error": -29.510065094056728,
+              "group": "active:1.0:85"
+            },
+            {
+              "id": "e7558dd4a27ea6c9",
+              "measured": 160.16695509812317,
+              "predicted": 189.77669262984128,
+              "error": 29.60973753171811,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "8ee0e512068f4173",
+              "measured": 159.35756463699425,
+              "predicted": 188.81932536501625,
+              "error": 29.461760728022,
+              "group": "active:0.9:27"
+            },
+            {
+              "id": "9f60ee4bb8cb10a0",
+              "measured": 169.12930088680554,
+              "predicted": 189.14547147654923,
+              "error": 20.016170589743695,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "4bcb361e507d93a8",
+              "measured": 167.43454201648836,
+              "predicted": 188.83645319020562,
+              "error": 21.401911173717252,
+              "group": "active:0.9:85"
+            },
+            {
+              "id": "235bae567fbb388f",
+              "measured": 204.08732572957933,
+              "predicted": 188.93932449693827,
+              "error": -15.148001232641064,
+              "group": "active:1.0:27"
+            },
+            {
+              "id": "14e634dff1ca06fd",
+              "measured": 202.83385857169995,
+              "predicted": 188.5838905978219,
+              "error": -14.249967973878057,
+              "group": "active:1.0:27"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ]
+        },
+        {
+          "train": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f",
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8"
+          ],
+          "validation": [
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ]
+        },
+        {
+          "train": [
+            "e7558dd4a27ea6c9",
+            "8ee0e512068f4173",
+            "9f60ee4bb8cb10a0",
+            "4bcb361e507d93a8",
+            "235bae567fbb388f",
+            "14e634dff1ca06fd"
+          ],
+          "validation": [
+            "792d79023d8ebb2b",
+            "ba8f8b35d02fd44f"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 0,
+        "total_cases": 8,
+        "individual": [
+          {
+            "id": "e7558dd4a27ea6c9",
+            "predicted": null,
+            "measured": 160.16695509812317,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "8ee0e512068f4173",
+            "predicted": null,
+            "measured": 159.35756463699425,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "9f60ee4bb8cb10a0",
+            "predicted": null,
+            "measured": 169.12930088680554,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "4bcb361e507d93a8",
+            "predicted": null,
+            "measured": 167.43454201648836,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "235bae567fbb388f",
+            "predicted": null,
+            "measured": 204.08732572957933,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "14e634dff1ca06fd",
+            "predicted": null,
+            "measured": 202.83385857169995,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "792d79023d8ebb2b",
+            "predicted": null,
+            "measured": 215.7696788947277,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "ba8f8b35d02fd44f",
+            "predicted": null,
+            "measured": 213.301349031637,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": null,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vdd_v": [
+          0.9,
+          1.0
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ],
+        "mode": [
+          0.0,
+          1.0
+        ]
+      },
+      "residual_envelope": 4.296390066878331,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    },
+    "quiet_power_uw": {
+      "n_cases": 8,
+      "n_groups": 4,
+      "features": [
+        "vret_v",
+        "temp_c",
+        "bit"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 0.14663668394152574,
+          "rmse": 0.1468062016023788,
+          "r2": -0.777760051479548,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.34941660439757244,
+              "error": 0.15089322380574666,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.2770846576056825,
+              "error": -0.13844252571891014,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.34941660439757244,
+              "error": 0.15193649677523302,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.2770846576056825,
+              "error": -0.13738332803522962,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.2727227790734546,
+              "error": -0.15589003709746108,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.3470275162230904,
+              "error": 0.142380179469327,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.3470275162230904,
+              "error": 0.14133683571579625,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.2727227790734546,
+              "error": -0.15483084491450222,
+              "group": "retention:0.9:85"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 0.005918371073237689,
+          "rmse": 0.005918373442373372,
+          "r2": 0.9971107237411538,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.19261032863720656,
+              "error": -0.0059130519546192195,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.4214402570403194,
+              "error": 0.0059130737157267466,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.1915564174304832,
+              "error": -0.005923690191856207,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.42039165407166074,
+              "error": 0.0059236684307485965,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.4226891514073148,
+              "error": -0.0059236647636009,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.21056043589774548,
+              "error": 0.0059130991439820535,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.2116143235097874,
+              "error": 0.005923643002493234,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.42164054660508227,
+              "error": -0.005913077382874554,
+              "group": "retention:0.9:85"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 0.005791094275963721,
+          "rmse": 0.007480590874684479,
+          "r2": 0.9953841026211611,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.1976769555486202,
+              "error": -0.0008464250432055898,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.4167919426452993,
+              "error": 0.001264759320706632,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.1966403215747939,
+              "error": -0.0008397860475455043,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.41576052988924156,
+              "error": 0.0012925442483294192,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.4178598443526708,
+              "error": -0.01075297181824486,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.21495424001496677,
+              "error": 0.010306903261203343,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.21599085078090963,
+              "error": 0.010300170273615461,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.41682842979309787,
+              "error": -0.010725194194858956,
+              "group": "retention:0.9:85"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 0.1099775129561443,
+          "rmse": 0.11013376593278806,
+          "r2": -0.0005189492111259408,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.31060893191594335,
+              "error": 0.11208555132411757,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.31356809838137073,
+              "error": -0.10195908494322192,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.3095576611973378,
+              "error": 0.11207755357499838,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.3125168658051481,
+              "error": -0.10195111983576405,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.3106089319159434,
+              "error": -0.11800388425497227,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.3125168658051481,
+              "error": 0.10786952905138467,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.31356809838137073,
+              "error": 0.10787741787407656,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.3095576611973378,
+              "error": -0.11799596279061902,
+              "group": "retention:0.9:85"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 0.1380945034883983,
+          "rmse": 0.13825896270186694,
+          "r2": -0.5767793627005711,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.34035622648251007,
+              "error": 0.1418328458906843,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.28556841670476185,
+              "error": -0.1299587666198308,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.34014638702832595,
+              "error": 0.14266627940598653,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.28535840923139577,
+              "error": -0.12910957640951637,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.2815333927673376,
+              "error": -0.1470794234035781,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.3390035372826244,
+              "error": 0.13435620052886096,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.3392133686353555,
+              "error": 0.13352268812806134,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.2813233764672889,
+              "error": -0.14623024752066793,
+              "group": "retention:0.9:85"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 0.1183576332386341,
+          "rmse": 0.11858712461774812,
+          "r2": -0.16000381194980484,
+          "within_10pct": 0.0,
+          "individual": [
+            {
+              "id": "8d72e30946619429",
+              "measured": 0.19852338059182578,
+              "predicted": 0.32024673564291817,
+              "error": 0.12172335505109239,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "f9b10e5483eadc52",
+              "measured": 0.41552718332459265,
+              "predicted": 0.306222786199738,
+              "error": -0.10930439712485468,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "0c54198fa1c53512",
+              "measured": 0.19748010762233942,
+              "predicted": 0.3212705115087688,
+              "error": 0.12379040388642937,
+              "group": "retention:0.8:27"
+            },
+            {
+              "id": "1752a0e482237bdf",
+              "measured": 0.41446798564091214,
+              "predicted": 0.30523256287719824,
+              "error": -0.1092354227637139,
+              "group": "retention:0.8:85"
+            },
+            {
+              "id": "21c0cc8a23c12f42",
+              "measured": 0.4286128161709157,
+              "predicted": 0.3000536831906565,
+              "error": -0.12855913298025917,
+              "group": "retention:0.9:85"
+            },
+            {
+              "id": "665ce7c391ad9109",
+              "measured": 0.20464733675376343,
+              "predicted": 0.3195265887849556,
+              "error": 0.11487925203119217,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "2dc42385b2672352",
+              "measured": 0.20569068050729417,
+              "predicted": 0.31798252597472865,
+              "error": 0.11229184546743448,
+              "group": "retention:0.9:27"
+            },
+            {
+              "id": "72a4756270ff4554",
+              "measured": 0.4275536239879568,
+              "predicted": 0.3004763673838602,
+              "error": -0.12707725660409663,
+              "group": "retention:0.9:85"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "f9b10e5483eadc52",
+            "1752a0e482237bdf",
+            "21c0cc8a23c12f42",
+            "665ce7c391ad9109",
+            "2dc42385b2672352",
+            "72a4756270ff4554"
+          ],
+          "validation": [
+            "8d72e30946619429",
+            "0c54198fa1c53512"
+          ]
+        },
+        {
+          "train": [
+            "8d72e30946619429",
+            "0c54198fa1c53512",
+            "21c0cc8a23c12f42",
+            "665ce7c391ad9109",
+            "2dc42385b2672352",
+            "72a4756270ff4554"
+          ],
+          "validation": [
+            "f9b10e5483eadc52",
+            "1752a0e482237bdf"
+          ]
+        },
+        {
+          "train": [
+            "8d72e30946619429",
+            "f9b10e5483eadc52",
+            "0c54198fa1c53512",
+            "1752a0e482237bdf",
+            "21c0cc8a23c12f42",
+            "72a4756270ff4554"
+          ],
+          "validation": [
+            "665ce7c391ad9109",
+            "2dc42385b2672352"
+          ]
+        },
+        {
+          "train": [
+            "8d72e30946619429",
+            "f9b10e5483eadc52",
+            "0c54198fa1c53512",
+            "1752a0e482237bdf",
+            "665ce7c391ad9109",
+            "2dc42385b2672352"
+          ],
+          "validation": [
+            "21c0cc8a23c12f42",
+            "72a4756270ff4554"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 0,
+        "total_cases": 8,
+        "individual": [
+          {
+            "id": "8d72e30946619429",
+            "predicted": null,
+            "measured": 0.19852338059182578,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "0c54198fa1c53512",
+            "predicted": null,
+            "measured": 0.19748010762233942,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "f9b10e5483eadc52",
+            "predicted": null,
+            "measured": 0.41552718332459265,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "1752a0e482237bdf",
+            "predicted": null,
+            "measured": 0.41446798564091214,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "665ce7c391ad9109",
+            "predicted": null,
+            "measured": 0.20464733675376343,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "2dc42385b2672352",
+            "predicted": null,
+            "measured": 0.20569068050729417,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "21c0cc8a23c12f42",
+            "predicted": null,
+            "measured": 0.4286128161709157,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "72a4756270ff4554",
+            "predicted": null,
+            "measured": 0.4275536239879568,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": null,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vret_v": [
+          0.8,
+          0.9
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ],
+        "bit": [
+          0.0,
+          1.0
+        ]
+      },
+      "residual_envelope": 0.01075297181824486,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    },
+    "hold_snm_mv": {
+      "n_cases": 6,
+      "n_groups": 6,
+      "features": [
+        "vdd_v",
+        "temp_c"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 13.597551971303341,
+          "rmse": 15.954261995371734,
+          "r2": -0.43999999999999617,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 265.6826657279218,
+              "error": 17.180875890849705,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 266.56033767795833,
+              "error": 22.446907591069078,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 262.31217933471555,
+              "error": -3.042042468388047,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 263.0133318181121,
+              "error": 1.1648724319912844,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 259.40926965340594,
+              "error": -20.459500556245587,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 259.9373342645675,
+              "error": -17.29111288927635,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 1.090291768666044,
+          "rmse": 1.3339730742750517,
+          "r2": 0.9899329278752913,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 248.38812124424047,
+              "error": -0.11366859283162967,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 246.10426871611773,
+              "error": 1.9908386292284774,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 264.1852800233619,
+              "error": -1.168941779741715,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 260.67093862036654,
+              "error": -1.1775207657542524,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 281.85274565007006,
+              "error": 1.9839754404185328,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 277.1216417498222,
+              "error": -0.10680540402165661,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 1.195058808992788,
+          "rmse": 1.388018173056155,
+          "r2": 0.9891006811552838,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 248.85084260813463,
+              "error": 0.3490527710625315,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 246.66755047805503,
+              "error": 2.5541203911657817,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 264.1485525588786,
+              "error": -1.205669244225021,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 260.7168678987537,
+              "error": -1.131591487367075,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 281.2323314118378,
+              "error": 1.363561202186247,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 276.66208939589376,
+              "error": -0.5663577579500725,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 6.886091584587883,
+          "rmse": 8.10021483296677,
+          "r2": 0.6288049915178575,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 256.95043162517857,
+              "error": 8.448641788106471,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 256.5679306768879,
+              "error": 12.454500589998645,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 264.18528002336177,
+              "error": -1.1689417797418287,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 260.67093862036654,
+              "error": -1.1775207657542524,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 270.0521869122311,
+              "error": -9.816583297420436,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 268.97808586733817,
+              "error": -8.250361286505665,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 9.470390077820928,
+          "rmse": 11.293846033899001,
+          "r2": 0.27840622415780747,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 260.93058999283767,
+              "error": 12.428800155765572,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 260.619698753664,
+              "error": 16.50626866677476,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 264.3096980257531,
+              "error": -1.0445237773504914,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 260.84307862301307,
+              "error": -1.0053807631077234,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 265.8349227726545,
+              "error": -14.033847436997007,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 265.4249274869138,
+              "error": -11.803519666930015,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 12.396248823797412,
+          "rmse": 14.33937482645923,
+          "r2": -0.16324042738683198,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "f27bee4913732678",
+              "measured": 248.5017898370721,
+              "predicted": 263.213787845003,
+              "error": 14.71199800793093,
+              "group": "hold_snm:0.8:27"
+            },
+            {
+              "id": "2e31fe05575391d4",
+              "measured": 244.11343008688925,
+              "predicted": 264.3429045295911,
+              "error": 20.22947444270187,
+              "group": "hold_snm:0.8:85"
+            },
+            {
+              "id": "c70fb89abcfc311d",
+              "measured": 265.3542218031036,
+              "predicted": 260.7537954502903,
+              "error": -4.600426352813315,
+              "group": "hold_snm:0.9:27"
+            },
+            {
+              "id": "b2d79945955a8ef7",
+              "measured": 261.8484593861208,
+              "predicted": 262.5729657309317,
+              "error": 0.7245063448108908,
+              "group": "hold_snm:0.9:85"
+            },
+            {
+              "id": "8c5c8d0e8855330f",
+              "measured": 279.86877020965153,
+              "predicted": 261.3033399698849,
+              "error": -18.565430239766613,
+              "group": "hold_snm:1.0:27"
+            },
+            {
+              "id": "003247c61913c6df",
+              "measured": 277.22844715384383,
+              "predicted": 261.682789599083,
+              "error": -15.54565755476085,
+              "group": "hold_snm:1.0:85"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "2e31fe05575391d4",
+            "c70fb89abcfc311d",
+            "b2d79945955a8ef7",
+            "8c5c8d0e8855330f",
+            "003247c61913c6df"
+          ],
+          "validation": [
+            "f27bee4913732678"
+          ]
+        },
+        {
+          "train": [
+            "f27bee4913732678",
+            "c70fb89abcfc311d",
+            "b2d79945955a8ef7",
+            "8c5c8d0e8855330f",
+            "003247c61913c6df"
+          ],
+          "validation": [
+            "2e31fe05575391d4"
+          ]
+        },
+        {
+          "train": [
+            "f27bee4913732678",
+            "2e31fe05575391d4",
+            "b2d79945955a8ef7",
+            "8c5c8d0e8855330f",
+            "003247c61913c6df"
+          ],
+          "validation": [
+            "c70fb89abcfc311d"
+          ]
+        },
+        {
+          "train": [
+            "f27bee4913732678",
+            "2e31fe05575391d4",
+            "c70fb89abcfc311d",
+            "8c5c8d0e8855330f",
+            "003247c61913c6df"
+          ],
+          "validation": [
+            "b2d79945955a8ef7"
+          ]
+        },
+        {
+          "train": [
+            "f27bee4913732678",
+            "2e31fe05575391d4",
+            "c70fb89abcfc311d",
+            "b2d79945955a8ef7",
+            "003247c61913c6df"
+          ],
+          "validation": [
+            "8c5c8d0e8855330f"
+          ]
+        },
+        {
+          "train": [
+            "f27bee4913732678",
+            "2e31fe05575391d4",
+            "c70fb89abcfc311d",
+            "b2d79945955a8ef7",
+            "8c5c8d0e8855330f"
+          ],
+          "validation": [
+            "003247c61913c6df"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 2,
+        "total_cases": 6,
+        "individual": [
+          {
+            "id": "f27bee4913732678",
+            "predicted": null,
+            "measured": 248.5017898370721,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "2e31fe05575391d4",
+            "predicted": null,
+            "measured": 244.11343008688925,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "c70fb89abcfc311d",
+            "predicted": 264.1852800233618,
+            "measured": 265.3542218031036,
+            "reason": null
+          },
+          {
+            "id": "b2d79945955a8ef7",
+            "predicted": 260.67093862036654,
+            "measured": 261.8484593861208,
+            "reason": null
+          },
+          {
+            "id": "8c5c8d0e8855330f",
+            "predicted": null,
+            "measured": 279.86877020965153,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "003247c61913c6df",
+            "predicted": null,
+            "measured": 277.22844715384383,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": 1.173231272748012,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vdd_v": [
+          0.8,
+          1.0
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ]
+      },
+      "residual_envelope": 2.5541203911657817,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    },
+    "read_snm_mv": {
+      "n_cases": 4,
+      "n_groups": 4,
+      "features": [
+        "vdd_v",
+        "temp_c"
+      ],
+      "status": "exploratory",
+      "final_test_cases": 0,
+      "validation": "Leave one complete voltage/temperature condition out; paired modes/states stay together. Exploratory, no independent final test.",
+      "models": {
+        "constant": {
+          "mae": 1.9963411767757933,
+          "rmse": 2.157083788860206,
+          "r2": -0.777777777777783,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 96.02494861272743,
+              "error": -1.2662956309007427,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 97.0645355732393,
+              "error": 2.8920522111467477,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 95.65992583978989,
+              "error": -2.726386722650844,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 96.61668005605382,
+              "error": 1.1006301424048388,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        },
+        "linear": {
+          "mae": 0.2484982327438665,
+          "rmse": 0.2484982327438665,
+          "r2": 0.9764066259959842,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 97.0427460108843,
+              "error": -0.24849823274387006,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 94.42098159483642,
+              "error": 0.24849823274387006,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 98.63481079518459,
+              "error": 0.24849823274385585,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 95.26755168090511,
+              "error": -0.24849823274387006,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        },
+        "ridge": {
+          "mae": 0.23814413971286896,
+          "rmse": 0.2736085737433102,
+          "r2": 0.9713975755128069,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 96.9791336734995,
+              "error": -0.3121105701286666,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 94.5862037184866,
+              "error": 0.4137203563940517,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 98.44888048547243,
+              "error": 0.06256792303169334,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 95.35187220435192,
+              "error": -0.1641777092970642,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        },
+        "local_neighbor": {
+          "mae": 1.4972558825818503,
+          "rmse": 1.6213872988220268,
+          "r2": -0.004423757625761082,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 96.27939796226664,
+              "error": -1.011846281361528,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 96.40364707863858,
+              "error": 2.2311637165460354,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 96.40364707863857,
+              "error": -1.9826654838021653,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 96.27939796226666,
+              "error": 0.7633480486176722,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        },
+        "gaussian_process": {
+          "mae": 1.880046238502537,
+          "rmse": 2.0320323159542992,
+          "r2": -0.5776282121139633,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 96.08423942282057,
+              "error": -1.2070048208075974,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 96.91053787469114,
+              "error": 2.7380545125985947,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 95.83322490624326,
+              "error": -2.5530876561974765,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 96.53808787805546,
+              "error": 1.0220379644064792,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        },
+        "random_forest": {
+          "mae": 2.0133845542078177,
+          "rmse": 2.153992887850271,
+          "r2": -0.7726866466025126,
+          "within_10pct": 1.0,
+          "individual": [
+            {
+              "id": "427530f571b03114",
+              "measured": 97.29124424362817,
+              "predicted": 95.90932214251755,
+              "error": -1.381922101110618,
+              "group": "read_snm:0.9:27"
+            },
+            {
+              "id": "63a6598a6d9f1989",
+              "measured": 94.17248336209255,
+              "predicted": 97.08405540789599,
+              "error": 2.911572045803439,
+              "group": "read_snm:0.9:85"
+            },
+            {
+              "id": "873fc079d572b27b",
+              "measured": 98.38631256244074,
+              "predicted": 95.76372225845348,
+              "error": -2.622590303987252,
+              "group": "read_snm:1.0:27"
+            },
+            {
+              "id": "c2cc08a8ae4179d7",
+              "measured": 95.51604991364898,
+              "predicted": 96.65350367957895,
+              "error": 1.137453765929962,
+              "group": "read_snm:1.0:85"
+            }
+          ]
+        }
+      },
+      "splits": [
+        {
+          "train": [
+            "63a6598a6d9f1989",
+            "873fc079d572b27b",
+            "c2cc08a8ae4179d7"
+          ],
+          "validation": [
+            "427530f571b03114"
+          ]
+        },
+        {
+          "train": [
+            "427530f571b03114",
+            "873fc079d572b27b",
+            "c2cc08a8ae4179d7"
+          ],
+          "validation": [
+            "63a6598a6d9f1989"
+          ]
+        },
+        {
+          "train": [
+            "427530f571b03114",
+            "63a6598a6d9f1989",
+            "c2cc08a8ae4179d7"
+          ],
+          "validation": [
+            "873fc079d572b27b"
+          ]
+        },
+        {
+          "train": [
+            "427530f571b03114",
+            "63a6598a6d9f1989",
+            "873fc079d572b27b"
+          ],
+          "validation": [
+            "c2cc08a8ae4179d7"
+          ]
+        }
+      ],
+      "interpolation_baseline": {
+        "method": "Piecewise-linear interpolation within training convex hull, separately per mode/state; scaler fitted only on training cases",
+        "supported_cases": 0,
+        "total_cases": 4,
+        "individual": [
+          {
+            "id": "427530f571b03114",
+            "predicted": null,
+            "measured": 97.29124424362817,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "63a6598a6d9f1989",
+            "predicted": null,
+            "measured": 94.17248336209255,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "873fc079d572b27b",
+            "predicted": null,
+            "measured": 98.38631256244074,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          },
+          {
+            "id": "c2cc08a8ae4179d7",
+            "predicted": null,
+            "measured": 95.51604991364898,
+            "reason": "Held-out condition outside training convex hull; extrapolation refused"
+          }
+        ],
+        "mae_on_supported_subset": null,
+        "status": "Incomplete validation coverage; not comparable to full-coverage regressors"
+      },
+      "deployed_model": "ridge",
+      "domain": {
+        "vdd_v": [
+          0.9,
+          1.0
+        ],
+        "temp_c": [
+          27.0,
+          85.0
+        ]
+      },
+      "residual_envelope": 0.4137203563940517,
+      "uncertainty": "Maximum absolute grouped out-of-fold residual; descriptive error envelope, not a calibrated confidence interval"
+    }
+  }
+}

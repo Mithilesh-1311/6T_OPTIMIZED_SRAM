@@ -1,0 +1,5300 @@
+{
+  "schema_version": 1,
+  "dataset_version": "56fd2a89b9e4",
+  "extractor_version": "5b0506d29817",
+  "simulator_convergence": "Unknown: no authoritative Spectre run logs are available; finite curves are not proof of convergence",
+  "files": [
+    {
+      "file": "ACTIVE_HOLD_DATA0.vcsv.txt",
+      "bytes": 45985555,
+      "sha256": "977529a84bfde23967cca1f0af6fb22e330bca26f979c3fa13dda5a7e1686eba",
+      "id": "977529a84bfde239",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ef660d9cf16bd085d9496960fad496a84109410b5293a5bf6b6562547a94bbac"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6b1628bab0d4c26ea079121543464ae8707e0fc385e5b9037094d6268e2688e3"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8b2dee471430bdc34eed75c6a0817fef90ca281107a7248df6f65982cebfbb5e"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "b789b9eb678e499bb6c7675660f6783ca87927cc56adc2c2d85accfedc51b6d7"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3c97155405394497189b919aafcd0a2ce8fa2d719f038069ae4aa7b6853327ea"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3c7fb29dc685796015b0f8c938585de24457efbc43291c462b15481c98f83a48"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c01441436b371e13d0f6fb491848ae51c001d33f5f8fa189b9290026b6d252d6"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3b4eea4f98671882a800ae27a896ca8dd48a9f945a683451ad647c77cfb2682f"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c2c343d45ce9ae79bc8b23912c05e0977c771f4a2e1db240af7c945ab6ac794c"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "02d9274288ada4a0ad539c3ef520f548daf7c1f4ad8278c8fa13d6b18224ea92"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "19d5da3e2a5763601e1611ba754b52081d65fe318939eaa90383802df2c209ed"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "02d9274288ada4a0ad539c3ef520f548daf7c1f4ad8278c8fa13d6b18224ea92"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100158,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "7d3730fff594703a671a696d77f61cef8ac44b426b26698973eacaea01e26e67"
+        }
+      ],
+      "flags": [
+        "net11: ambiguous units s/yunit",
+        "net14: ambiguous units s/yunit"
+      ],
+      "rows": 100158
+    },
+    {
+      "file": "active_hold_data0_85c.vcsv.txt",
+      "bytes": 45973085,
+      "sha256": "0a1577c8e567d4574e5dcc793393789dcab979ece047978fe5e8052421df2d5d",
+      "id": "0a1577c8e567d457",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3d2a641d6e6ab0a56690c7d7778fa266c0cb65eb26962a4fe8085c6752397a51"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "af7d81ebbad1ffeacc2bd03dde6075822d54287312154088861541ad1b64b8b8"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "795d9e2b043586e2c43db94fc2033f21a6574662e1d87dea0b44ed4d79a62e88"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "81f19a1aedd849199d503f407833b9a9cdc6e5b5da4e019a8cdc57e18f934514"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9457bc86219395a8c0e1961c8716083ecdab1fa32dcff60cfb86d42926455603"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d0660063f4c2bc7c4b84a427d25f4e466133d724ce8791cc2c068368dd114dad"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "2871fa693701237597be7600f8a2c3c96b9b8749851cb4fa64a2c9b787a9eec8"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1ee011aec1e2d4c16c112bf88595b698641206fbb0d23b5a9d6a9acda3c8df8b"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "54e81908c5d3b06c437d1d399a3f29a843a0a5bda7f4c1be0ee6be1828a70ec8"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "730e10dfec81b446e632e090a6f741055756592f82fb42c6e4fcb28858c428da"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f5713ea7d4e20053451f6e03e8ccf33062f681f0fadbdba5958a84274992f612"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "730e10dfec81b446e632e090a6f741055756592f82fb42c6e4fcb28858c428da"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100136,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4c7eaee9fbd6e25a51eecf472d93df95364a8da34e8db6a0e0ddac085be37742"
+        }
+      ],
+      "flags": [
+        "net11: ambiguous units s/yunit",
+        "net14: ambiguous units s/yunit"
+      ],
+      "rows": 100136
+    },
+    {
+      "file": "ACTIVE_HOLD_DATA1.vcsv.txt",
+      "bytes": 41610615,
+      "sha256": "f16c485a84f5464aafe81bf1a39e66848f4edcc54d092a031a18bbfa78751b72",
+      "id": "f16c485a84f5464a",
+      "decision": "superseded",
+      "reason": "Missing retention-source current; COMPLETE export used",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "50b8f91ba8af2050d5ae8977b2dc4d9e941e04428b8413f50b2cc13df69cb9c6"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8b76e5ec1c906a9fe617cfeb130d20d142ff71abbb6674099465c22c0a38c873"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1e47d849068c6e2d3e7ca381d45f2f96e90986fb0a310c686d8f2f9db79c21b4"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "459287f84e187a4a91097d1bbf480c5102bbf6ce839a55ac981ec28a59860287"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "0d8c40b2b2466bfffc93d227ac9377d628f620df0da1c43df946693cb3244fb7"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "36d5624009df72309c11f0c4d9d91c58264e75d926cd603cdbf6e7c2581504b8"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "05ed3654db54819523db4974b070063bf05ec2db8c84133eeb1592674585e756"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e900df972d7bf0d1c07f0500f219e7c02aa4b19653a41539df0e26bab0528f27"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "38a3366b53f7075bd611d1ae18cd8a420d13722833577cf5ba41fd2c36ae3488"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d36bf9821a310bc116b1b408bceb6abc8d881758d6005226302cdebd9402db23"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e900df972d7bf0d1c07f0500f219e7c02aa4b19653a41539df0e26bab0528f27"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d519125fe4e039bd428ab9fb5a63f8570a56f7e4387f80fcbd88827d642656b6"
+        }
+      ],
+      "flags": [
+        "net11: ambiguous units s/yunit"
+      ],
+      "rows": 100167
+    },
+    {
+      "file": "active_hold_data1_85c.vcsv.txt",
+      "bytes": 45979186,
+      "sha256": "f4573bc2ef0f8f4b299f1cbe00dab1b4725cba47e4a176f686418b3a368d067b",
+      "id": "f4573bc2ef0f8f4b",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "eb4d8af33ab05319b1ea1f23f7c91de8c4aa8e41993e7acfca8bfb2faaf62c39"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "b49b3baba92ef2a80e567b6fac826a2ced3b5de29fe32b38ddda9cbc8908acd9"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "32cfa45c90fde5938757a4fd3cd8cfd486d9769a73561a691e494fa4076a66e6"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1d7b8c0e50a67719cfc1d18eccfd78a44d4b645fe883f79e06642bbd1d10feff"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "501180d0b0af261f535af298a39af89535baafe074b57fa414ff323c721fefe8"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "2e0363aba3f5a0adcc0b4d702c99813bbd95fa89d6b6c1816179248fabb975fe"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ee4cf8cf171b1476fabf7fbe3b403cf4df53d64d2f9d5dbe3ae4ceb8b0895689"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ad4fdf1ab7fa0572baacb5bacbd76632151b1829a2417ed91db368150c695cd4"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "09116507d5d732e55a3ac33ea0b22b845df02366cb49f1a8ef50a919d2707b5a"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "ed6daee029a9f55c78fb1516c4e0a188d5e1bfff5bcda685ef5f0399d38c2daa"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1623956d814157b6d70b6471e3d32e881ede9266d363af6aa4b2ee86ce433f3e"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "09116507d5d732e55a3ac33ea0b22b845df02366cb49f1a8ef50a919d2707b5a"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100141,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c2e81ebf95c3cf203a0570da62f17227c4cb39f1fc803b0026de8c6d37aa5db4"
+        }
+      ],
+      "flags": [
+        "net11: ambiguous units s/yunit"
+      ],
+      "rows": 100141
+    },
+    {
+      "file": "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt",
+      "bytes": 45994928,
+      "sha256": "07c3551a510c4a59847cf975d322ba125264363196ff31b722d2037c29c7d24e",
+      "id": "07c3551a510c4a59",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "50b8f91ba8af2050d5ae8977b2dc4d9e941e04428b8413f50b2cc13df69cb9c6"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8b76e5ec1c906a9fe617cfeb130d20d142ff71abbb6674099465c22c0a38c873"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1e47d849068c6e2d3e7ca381d45f2f96e90986fb0a310c686d8f2f9db79c21b4"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9159a70a619f32d4c48aeaaf5c17038b86ab6b15a738bbd7cd2ed8fcfb411526"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "459287f84e187a4a91097d1bbf480c5102bbf6ce839a55ac981ec28a59860287"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "0d8c40b2b2466bfffc93d227ac9377d628f620df0da1c43df946693cb3244fb7"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "36d5624009df72309c11f0c4d9d91c58264e75d926cd603cdbf6e7c2581504b8"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "05ed3654db54819523db4974b070063bf05ec2db8c84133eeb1592674585e756"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e900df972d7bf0d1c07f0500f219e7c02aa4b19653a41539df0e26bab0528f27"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "38a3366b53f7075bd611d1ae18cd8a420d13722833577cf5ba41fd2c36ae3488"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d36bf9821a310bc116b1b408bceb6abc8d881758d6005226302cdebd9402db23"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e900df972d7bf0d1c07f0500f219e7c02aa4b19653a41539df0e26bab0528f27"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100167,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d519125fe4e039bd428ab9fb5a63f8570a56f7e4387f80fcbd88827d642656b6"
+        }
+      ],
+      "flags": [
+        "net11: ambiguous units s/yunit"
+      ],
+      "rows": 100167
+    },
+    {
+      "file": "active_sel0_85c.vcsv.txt",
+      "bytes": 28878347,
+      "sha256": "792d79023d8ebb2b26a79285b6a6d062f3e668eae7bed591f1cdd149ae129523",
+      "id": "792d79023d8ebb2b",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3610cf96d7f7c5428d48a04c8bad567f6b68abad1246c614abef5cfc57e4ead9"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d75ff173ed268fedae22a56c3a65b74e145aff232f1a71e261236f63f408d18d"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "54183a3a568f5c3b6fecc63718b1b16237aecc6f17e048b69bc902cc59ffeb53"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3a2596378f2c62979e46b3958477fb533b678a60b8701a7753ca10aba061aeb1"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "98a34183aef3b88757b85631db04bed01fd6c0c4bb1c213f56470a382778c3a1"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2f1df1e68bae7144c3dab56d2fcc26b829e5fb4e57b708fe910b221bf5658fc5"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f0a9f3a356e65f8d2f264e19b982df0018b66e0754c8b22336e99729bdabb78d"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "502320dad9991e6d01e9a77c5e072389c65244a67d6e0a8834aab66ea7f43129"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9131558c40b02b34d9b091def27f6c603c3dbb59bac90bcfac411014b29b928c"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "4c0021714d0b94fa7b95b1040dab2974980c99a2c9f6dcb4a14097817919728f"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "929cf75af841fe5f5c2cbbab16afb83410fefa9fae209f41d6b89da571dc32bb"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "294bfa7cb8d16b1126ca4ce3bb62e5b560f0453840844773dedb07cbd4c36368"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60250,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "4151bcc79c546273732872affef37230e7d352170f1dbba36dd37426dc4bc664"
+        }
+      ],
+      "flags": [
+        "net16: ambiguous units s/yunit"
+      ],
+      "rows": 60250
+    },
+    {
+      "file": "active_sel1_85c.vcsv.txt",
+      "bytes": 28816299,
+      "sha256": "ba8f8b35d02fd44fb7e5eb6578587c34ceb58ddcf6db141ff87ae4d380144f58",
+      "id": "ba8f8b35d02fd44f",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9e1ef00b44cdda392075dd87a00dc7cbefb5766f2991e56261139ac911af1be3"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "fe4214bdf1eb757c7512d9b163905bb291aa2c4970118a38fb0f348cfaa79b48"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "cc7817db9cafb54acc3e7b7d842a4732527e56dafce61917e313f9bed049d7a0"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "67232b27305d2413235e509cfd839435e7e905ed13492d75319f390edc69a9f6"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "75b852c72e8808f3088e47c85e0173041b7ff6ca9b9cae6d99f20e1f4b17eb66"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c60d00ece23389dfbbf4cb0882b8e7247ddda6e6bc3e45290f5f2230777d2adc"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0aa941dc0736d56eaa1fe1c9d6afa16848e1525403de6879a198fdccc4c249fa"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "52c05c32d8984aa721646b7693a5b8a302dc2680a2bd486f36725cf7dcc62893"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "85723f5bcbc4d564043a4cf79c333f745f1048e51682582f2f7211e8393b285d"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2d5c66adfa87bb89aaa8c59d3418cedace37a5ea42a6ba834cf25259cb40502f"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "74237abe370e68df85c21a7187883a88d1d41e78066825303d496dee9fa5e7a2"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "54a8ac9c38117a9e62d52ec7e26d968e2a1a550572aecafc9410c4df5b614509"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60304,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9b468014759d104772fe1a94aed78982cc87c978aefe610f19e3a59f8d77739c"
+        }
+      ],
+      "flags": [],
+      "rows": 60304
+    },
+    {
+      "file": "active_vdd09_27c_sel0.txt",
+      "bytes": 29156207,
+      "sha256": "e7558dd4a27ea6c92a609b496339bad1abf7d3d3e3aa19442366c0b5d46e0a46",
+      "id": "e7558dd4a27ea6c9",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f1dfe9a937c0d4d2a75f820536dec277fd24beb7e2ae81be47538d84836c1133"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "fbcf0702e8e5955b8829cbcc8228a3751da72c80fc21926bb7810896d36e0209"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "acf22f1b1c9f1e55a0f04a687b3f3fb171ee3472753e7e4ac559cde965e464c7"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "4e4ce63f6b721ef9170be43c136b3541515ca71277c3e0236e6215b8050ff17b"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d34a1fbaa4b4ff4fb01649b87788f2e5365d0fcfc207d509ced51872b317c1c2"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "28e4237cea5e830253c9d7cfe0620c34a2b2e09069b22ac0c2952554d94b1e73"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "97b7ad5328d4cc43e57187e1ca62f6aae9587b348e23c31bbf905082c70ec10c"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "25bd9121d26da23c8b9a3b13370dedfda9a4627e145cda3aff52b854f72feb69"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "5eaf1b5ebe650588a26111efb92bd5f4ca5704391af45ed054f2e5eebf2012d3"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "7629fbebe5361d3ad0ae7c13d8b8d7c1f7ae7c701ed0c3dc5662cea6c23047b1"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "da8076057d0513f26dc141060eb239cebc4c1124d195f89ba2a3daa59dd4635b"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "19bd1bdab26561e48247b7ba4e8cd36f16bcc3b8a399c55cdb5ae6a9f0bb2f1e"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60299,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "88758542007c68e3a20d8cc5e21bc90ff7b1088e9de8dc943c61971ae7efb78f"
+        }
+      ],
+      "flags": [
+        "net16: ambiguous units s/yunit"
+      ],
+      "rows": 60299
+    },
+    {
+      "file": "active_vdd09_27c_sel1.txt",
+      "bytes": 29099096,
+      "sha256": "b94591276524dbaac056e31d576f9dd24ad9424f292b7d9fc3fc5a1bbdd8f06a",
+      "id": "b94591276524dbaa",
+      "decision": "superseded",
+      "reason": "Original long-mode SEL=1 V; corrected _f uses 0.9 V",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "02eb2c8616262db6dc1457d475d9298945db38fc9b04456a02bc011bf34df227"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "e9bc210a5fb6e54b2e6d1e0b89cd5ac7cc9ac1f8204449aa693ff323b9a4c720"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "27c8e7b2411a164b427c049c1f715838a6bcf925ab226c09fbaa86c6091df2d6"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "61eb6c702e1126f3c421ef11eb1e32f6ed9a3aefdaced7c73a0f28a6979a6911"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9e2ff3fc043a46ea46fe21a5974da87714c8ccb408d7c5d607f1834360dcb5d9"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8a3f11cf565327937ea99d9ed5030dad29fce85903ef57c871ddbcdc6c5cb8c4"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "a2fd74a1e2eedd870953c3db6a831f6c9bac16b987c873dff89fdd51f01a0b44"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0bd5b54c3aa5ae4e988155a2abac88367fb70e0b989639dcef1ac4ec1c0e4c94"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "e9875470eda13938884802d9b6b4d4b714380659b515eb8d94f68b260ebea847"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2f237fb4282259fd791e8a8107365ae1fac7b269c29db9639049ffa46dc1d615"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "457e0884311a0501dbd15f3ebb38b3519601f8ab441d6628c98e1eab8893aa34"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f212b72953765fd9597fd8e6df0c59d8adab95dd287692b297ca7a4476d91730"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60361,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6a89f226fec41ccc1189b225b6ba96abdf581c18a02ead462d17ead6fa1e1caa"
+        }
+      ],
+      "flags": [],
+      "rows": 60361
+    },
+    {
+      "file": "active_vdd09_27c_sel1_f.txt",
+      "bytes": 29211455,
+      "sha256": "8ee0e512068f417375c3989073a975b607757909835b7bb37de5a09d49045f03",
+      "id": "8ee0e512068f4173",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "12c4ef48505b74b68d89380d3251ae41b1d468ff597ea2f9df8c6cb6f9d7a304"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "1d0fe858838a6e20105ae2e268767e113f54093aa4d3766aeaad9e032ddae4c4"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8d012de07880c6613c538d193baaa1eec10b6bb648af517ef97bed407d124b94"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "57194902bda7fa947de80d8919157277caeb608d4a869cfac49c32765d7a8062"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6640af82a7d390262a9fcb53c57efa42974b2d9bad850c38d3024653a48949bb"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d4fd6c90fbee9f6ef71258d12079ceb2afb564b47b25c0604cfa794a19f90fdf"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c804b6bd64dc424892c9ac6bc1e177eb3f2f886ad15d3a5c056ade99cc954e9f"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "326e1728538e2025bdc0de4fabba61dc14295097e72bcf4f7e94b1d7dc1d09b2"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6de4b968d742177d55704490a3c9d941a8eaea2dd3fb32ede4f2dcf3337d9752"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0577b1c26b8065023847db76b12cd976e990a75bf04dbcfe1c487cf3fdb7e971"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3f83c84aa0d9b2a98995e19b7d74860eb2ca04555bd1e6610e1dd2a61bc154fc"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6ae2d5042965622e4f1070d7a3f8a62c1a276c2fc184c545be02a90bb47497b8"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60350,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d8118f2a0b5a39015ba7c0a3e88642eaa8701145922525a7b3eac2464229746e"
+        }
+      ],
+      "flags": [],
+      "rows": 60350
+    },
+    {
+      "file": "active_vdd09_85c_sel0.txt",
+      "bytes": 29128232,
+      "sha256": "9f60ee4bb8cb10a07fbe1d74d0fe20e4749bd6c81cdcf5f53d37e3a90eebfcb8",
+      "id": "9f60ee4bb8cb10a0",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "18c600f23f11454927067efd2976b6dd7f32c0981efe13126caa95070764d185"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "69b7246b16db6271bf9bef6ec02bfd4a41d7ec8c11f4eb331ca972d86e19d096"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f9d68251e0e663ed2439ceade348ee935388cc1da9010d475d4ae529cdb9538c"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "edbeb2567004d5e9ee83558f8fae681808eb7873ff06df5e6a53a9f64f0c2733"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "40263585b2d7c2b7222975c3c5ccfc298bb12ebe434fb3a1ac6298fd5678ccfa"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "37c75842a8650745064fdec4bf318e418d3d4a6900a96ab1817f47c24ca864b6"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d8ca89522931f95aebdce10d5ea9d208dadac5402bf26fc6d8aa7eb5d6f46e60"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9d45ed9cdb50275b675e110892eb6c5ff778734e6866f0a903d4477922f5e068"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "57a6f9cc78b1b13a93d6051c734886a9fc56e7df5527332f0f409fb80e671bc5"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8d9397335d15010d6c3a5b0ac29a07fc92f2b9006224314d0fa0e009871b4700"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2064f2ea54833b860f2bbe09a6014eea5d81d88f4e9a03f0ba5da6ef23e85f2a"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "b5931e34b2f609ba32ce730041ffa21c9e8764b03b8c91d8e65c77071812bfff"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60265,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "40371da29d87fee13347f3c6f56733f50fb22852c51dfbdaef3f7dac7cc2a600"
+        }
+      ],
+      "flags": [
+        "net16: ambiguous units s/yunit"
+      ],
+      "rows": 60265
+    },
+    {
+      "file": "active_vdd09_85c_sel1.txt",
+      "bytes": 29075620,
+      "sha256": "102c07822ab9cf01e929c80d02bdf530e27dc0fb0c9c9187edc902b7b531f1ee",
+      "id": "102c07822ab9cf01",
+      "decision": "superseded",
+      "reason": "Original long-mode SEL=1 V; corrected _f uses 0.9 V",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "654b67c8229bacd8cc52e18c69272fb1a37863378d6eab40686b0ada17685886"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c6478b44cb9bb10f6e6dd547d424b9d9eb65c6a3b3eaa5eb5b6ab431ae0fd392"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "04faf4f56974aa01f5b516c67d9fb0f92e66910618879709633a4f10677f0717"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "605a319825569e77b2be680f83fc717d34f156ba00695d217f8d629f1ff10d70"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "91888419b48583b008ce65380e8d66af60a7c85528f01e8d81163653f32ce792"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "5ee8acbb7ae2888d39c0d78409297cba3eb3e94dd1dc26af5b0191b234164783"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "62bde54b670f560f34090a4d836ad281f76c467aa92c3b2f1f56254fb630dbb8"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "7824922109fbbc6d2ffb94405ff06600b36b8c451b2d6571b52eb51339cfdb71"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "77a4ec0958bc9cb18e93aef20da6f68d1f6f468cad9a3b730f97bd2c2c0b9b98"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f27dd591650669d7e9c3ae653cff84922cf9962c91160c1981d40bd37cf4f83b"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "671f59d0e324c599853f15182d6dbe3dd133d7937a145161d616bf04219acbbc"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b3c3fe45a32536ed133557420bba98a9aa993a2931754d62e4bfb0ed4e7fa1b8"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60334,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "39183d5c4c1e2e81cc1c21f2fd085a7f9badf5d51579ad5d67675fbb182e74b2"
+        }
+      ],
+      "flags": [],
+      "rows": 60334
+    },
+    {
+      "file": "active_vdd09_85c_sel1_f.txt",
+      "bytes": 29186030,
+      "sha256": "4bcb361e507d93a8c2a14bf415308c817e7ffb7cc0ba0e737c46f78067a34462",
+      "id": "4bcb361e507d93a8",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "02d5cdd9a1243d9750d689924c3362541efc83acb280c7e26683b0cdb5ce24a7"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "76e755be1507deff2a94935de11258e6f25a1acb1c78751e7f2a86f4252cad3b"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d039415bc45c7635d219c2cc38c210a3978e728b479c11db70093276c3063347"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6d0de2d391f1723deef73380876d4da66b58f67210b57c7fd864f7d5f49ace03"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "ffdd544f2e484d256059a7e5dcfcb15d316cced2f6581b8df2be359335248a68"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "4f5751d027fff59eb016600a907d9d77bf78dc9cfce7f72ca1259c4fba8cd54c"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "1288a280161e01760b02b72dd0ae91de40e67d45dc254d952136604340665d84"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "7b8e3d6a327e4cf1ba3c5d578f28de9b316b537fad4d88dc55ab2ee14da8330f"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b68cd063ced471ad24484c3590afbb2d6037738740a1f8333d5b454f6eb42365"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "30c394e6f99a021eae0ee523c644721870b808fa1c31311bf90e036bedb16671"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8b054e5a43ec9474293e33765f7a56bf28a9a7f5339fc425c80bff241250e111"
+        },
+        {
+          "name": "net16",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6a8b9ff8d4e41d5405db2d0dabb747b0c2ce47011441c5d9f8b48410bc923135"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60320,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "86304c5fe747b6812f6b81c93e610fcc6d78450187851e12b563f13a912058f7"
+        }
+      ],
+      "flags": [],
+      "rows": 60320
+    },
+    {
+      "file": "FILE .vcsv.txt",
+      "bytes": 130744,
+      "sha256": "c428937bc4c29352254ddba73f08f1d9dc7e48dd0cc73afd7f6816b2528df73a",
+      "id": "c428937bc4c29352",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "003afc41993d43d3679d69fe09d4075e90d6e920ed6bc85de2114a907f63c8bf"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0dd9e07c91cb5a03cd48c0a832e0333ce4ffdfd22f4fea675190d934c9d09bf9"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "05cf627c4c4a875156fce0fa79cde72f665f3873a05194c45aaf9c19ebcac5f1"
+        }
+      ],
+      "flags": [],
+      "rows": 1041
+    },
+    {
+      "file": "ret_data0_27c_vret08.vcsv.txt",
+      "bytes": 50435890,
+      "sha256": "8d72e309466194292fe081e7aff26e0a833c4502418632e7e7a0b9dd52bfc6c7",
+      "id": "8d72e30946619429",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "a3c6b62d5054be5d110cb0c3319599b2b48cb50e3e9829c2947f2ef31cfb8450"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "68cdc9711059a23a513f3475aea04611cbce6c60b060a6cc538ea64b1565dd52"
+        },
+        {
+          "name": "V_DATA/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6351c7fd00df48fa434d70b60ac0eb395f17f884d4f1efa2d92daf7db3278930"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "efb9aac8bf09678a1f5e38956dc743ddec6ca966c10b17662406efccc4c6e99b"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4f4cac6ffd6e115f32ebbce4a4dd73a891c4569fc5196f386022046d71df75c0"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c6d30f6e2c4cee5ca98fdc6d9c5df7cf7fe25ab7564b0a45e8863c59e8074e80"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "51e210b5f38686da453f21af5e8df0e0f988d50a5c3fd43cc9d97142df2b4f73"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "101bbca03dd6f03fc57448618769dca4f9da8628e6b286bd3ce40620da1f94c7"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "2104acbe12ae15ce62b4aca45c72b115d02c8e0e67c1833810e9f57ea71c2c5f"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8a96d63f4ef8a887891052d4dabaada8cdab85562a0ad1faf916b75bf7bf61b4"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "5299af9c37b8c7ac0828b32d57e7902b8c0752acc950a3bcc0c0319ff07f697f"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "15f6432e0d760f6525fdcd6961daf744be8a931e344b6b75659193e0595f6b0d"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "86f7b59136468a6481992c2de945df7cf3d4a55c96390065ab3cae6dda3d9b86"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "996d56c960c334f06cb2763a8fce9028bd673089974f4f546333f0bb59298299"
+        }
+      ],
+      "flags": [],
+      "rows": 100183
+    },
+    {
+      "file": "ret_data0_85c_vret08.vcsv.txt",
+      "bytes": 50426153,
+      "sha256": "f9b10e5483eadc5233b72b8aa2e07ae81a5b0c8a64f64485947166945c14911c",
+      "id": "f9b10e5483eadc52",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1769dd4619a94372779ca4052f811cc9f2722f17f6e5498d80981432378640ef"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "16f82d7bf8fc4c007c506b31d3fdf4941ad0e88072bfbd877ff23323185ae2d2"
+        },
+        {
+          "name": "V_DATA/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ac2f9af09042c967d3d5ea3cf83581857f96c1135c5e32f694980a48330d8dac"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "24eda2d8c883bec1cbabe787e82d76e9fba8183b93a31846dfbc012658747ac8"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d7deef4b0efc3685fd3cfbe78b701de900d44977b0c7030074ea67e3ca787905"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f5f94d14c9fc2af390eb3920ea3af490d0bb80d2879f6dfee03eb27dec9df183"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f51a86ee3568763e3c8ff75bf32514e7f271c55b2eda674915b4e31497627573"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9f2041d22331fa04b230e2bcf58092334cd447259601f97d868852bcc66ec156"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "5c893133e96a49cde70411155a6457b4865e4ff501277598de5e775424b69812"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d576818d4af360bb08804b6c0061b263f66a04cead6ab2ea7de38ac60f854b65"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "36006115e4b4df59faf6e0449254072032684b7f80cf55db36516bd65574d049"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "a7c01bc0b7eaf12000edb368464f545290b3a988ac29a42679c35679b99203ca"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "733757b83f9c9f0f66875fd07511a04af4c12e3cbda6a4fd3fd50966a271e60e"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3699880f6c856c3f90d06e6a52507df1915e77773b3dc4ae16dc0a7ad1ed60bc"
+        }
+      ],
+      "flags": [],
+      "rows": 100163
+    },
+    {
+      "file": "ret_data1_27c_vret08.vcsv.txt",
+      "bytes": 50544487,
+      "sha256": "0c54198fa1c535125a2db359feb0f715d88b240649f33f0f2aa51ecff3675d7b",
+      "id": "0c54198fa1c53512",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6396f89bc958c1984c620014f527c6c9de19992d828c717f3f78f8b4ab703218"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "85286c08a737112b0770f4d65befd6a68dc0066426c9e5f3c3f8351f5da075e2"
+        },
+        {
+          "name": "V_DATA/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8ef715caf89055fb2ea41fda65fa5e45c1485824d394b3fa102a0110143638ee"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "167271ac184d06fc4a46e4a135a5ff9072948fb2047f2bb2d191252de9661d7d"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4b3e1e8e9b70674d35ffcfd8b22e5ad961b856cd1212358f41ffaa699c0e3acf"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d0e1f468bfcab3f89902d3a92dfce1f4dab2e3a31045643010952cd6549de094"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3b253fd2f7978267319eeaffc6941f296eccc5db24e574f1344995d47d4f6688"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "02867e6935e07d6e0e5a11925f6b36e4e622cd34262b4d38e5073e7718b53eb6"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "2338431edc73292098a74a94acc8dd6964f6b738626313403d2a4b8f64e33156"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c8fd17031c2bc4b156532399c2908d92b05c7aca3a50c6c08dee7fa059888722"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "755f869b971e3334fdf3fd3906d338f9f060af12435d89ae7898e71ccd7a9496"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "eb4e4ab09e15bd3d624c31141b6a722f2b1f94da7b42de946b8b5c3e5b2f272d"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6a09151038e9646e357ec44b4025be1a2cdbdac5b8c74a359d2dd7ffe6359315"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "41c2fe7112f6c4b7ceec5563cd6587c736b2a9515ad8055de513c21d4a459605"
+        }
+      ],
+      "flags": [],
+      "rows": 100194
+    },
+    {
+      "file": "ret_data1_85c_vret08.vcsv.txt",
+      "bytes": 50529171,
+      "sha256": "1752a0e482237bdfac1e9e2c47dda793ab5b5ade77c1f3fd7effc9bd0569c18a",
+      "id": "1752a0e482237bdf",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "491a835e7035654687cc578273e28a49a7d1424ac8353030c36a769dd80c6fbc"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "53fccc81ed17bcf117c4f4f68754b87ee5d0b6e9c5084b2957f69f9c5898a496"
+        },
+        {
+          "name": "V_DATA/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4e46c5a5d4cc0165290b3db3673b0bc303bd2c358a9734f7d03465eaa414b216"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8fa100e7dc396dadd7f39ae7649bb6e8a466c10264d65dcbe9dcd5c64d2e21cb"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "815a6946095f899b6c197e8b21e1679f82aa3c718d5accc7c60eed467f051b77"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "af615b94c9a4c50eda4479696faa0a99c8678163073b91801932d346d620196e"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9b7c87fe561d11eaedf89ff6d5bab556f311c36a48f55b923eb6b550ec5ee4f6"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c1f159532c30e29577ddc8a4fe04af0ef2d5309a3ca6cb1157e29e7a805c1930"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9a3996f5346cf25cb38f8b0e3603800cf85fd392b7be6b6ebf1267e74b02cd62"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "71ef98de758ddeb6eebe4b5d9400d50eb0a1e65b5caf795c565a09ef42196f96"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "dc1baf6281cc56213f4d5fb7e0b770be20b755f586a11ad0edf72b8cd142b524"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1b41aab017e514339a23471c73b20e1f82fbd774ad8d1ff1d5cb7c5a05c431a0"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "12ed3cb303022e0c54af38e6b5eb179bcb05172345453ea719792096557e4d9f"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "a434d9eb4f4fe433a595f4f10934e957581522a81d26c26154fa3685d9d96bf5"
+        }
+      ],
+      "flags": [],
+      "rows": 100168
+    },
+    {
+      "file": "RETENTION_BIT0.vcsv.txt",
+      "bytes": 47854489,
+      "sha256": "504ccd5592a2f7eebdd56a78629f93ed1f6fe730b0995568d93bf7f363928891",
+      "id": "504ccd5592a2f7ee",
+      "decision": "ambiguous",
+      "reason": "Earlier uncertain pulsed DATA; replaced by verified DC bit0 run",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "36a7bc1d3a13e3206d5f716ce4839fa9ac5aafb632da963e4c77717b0c105c99"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "acc910ecb7d69a129f30db2b61d8c8b90fc34ab51e77b60ae53e904ba04217db"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "baef5b379b2e703b361486bd300d61705bd2dfb97aecc0688380057c448c9eff"
+        },
+        {
+          "name": "V_PERB/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "dffc9fcd81fd955339180ee72411aed59d1282c989fe1b4deed1f7bcabadc873"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "0db8d907e64c8b16711de75dde931a428fb8fb3d41339602de82e2b5384e905b"
+        },
+        {
+          "name": "V_WEN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "54dc695da3511e3931a2938cd4abfa8e4747791db4da7acdee67edf9fe732c2b"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "a7c5029637f5302231649e44841ba2953a8ad1cabff3e9e6184b3ef7f18ba4f7"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "3ca8546646c19463d4798836d7c7003b03d6acdb43e687ce87ebeb0b8e7df34e"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d0263829b8564b11443cdcb880328d82070f3aaaae4eebb7ec8600278bb1cb40"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "52fb050c08a2622948a99cbb674f1f97a421e135362a07500f6fe94fdd38fcba"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9c60e7446f088d3f14eaae5a8c7c4c52a9fc2db10aa703e40f10b1783b0a9c23"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100215,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9b67fac45eaa799bc38bcd6aa96841ae11d533204938b9b63338c1d69554bc84"
+        }
+      ],
+      "flags": [],
+      "rows": 100215
+    },
+    {
+      "file": "retention_data0_85c.vcsv.txt",
+      "bytes": 46040463,
+      "sha256": "21c0cc8a23c12f42fca997c0a9804f58545e7220aa18526b759f0645dcf63436",
+      "id": "21c0cc8a23c12f42",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "092f73afd913b015c2415c429796c4c2a1de194c8f44b128716822c1314813a7"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "98bf942a06a19e4334b1d7ff56a8d3d036a5822c18ddc2a68ad7484712c4e4bf"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d7e4d4d81e83fc77ab26d4198c89d96f4b563f263a392837855973d6b0a63af6"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "fcc903b95f1b3b6238f954fe9e7a517cc809cc78e5a252613b4e1a0162a59766"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1c86f472592663cefee53a94e243942034583a889e47fbc910de807066f2f52c"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8aaf31982979966a1125b5390ddaeb7280aaa5b806e102db38be6b51280c59d5"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1ef9c784d791376bfe90e10f399b7c6c519c99d12951b2102479ebf086bedf7d"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "2f362be53eebac24813f994ced236600ca45a770542c1f03ea86d5c4823759b0"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1873674aefd1d0ed92435932eeddea7e935ad94d8fbb6c408c566db9e2171984"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "caca91cc5c8acf4becbb08cffbee043e30c30e02c2805711490a6dcd1feee07e"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f5326e13296d55a562a3b21091fe0199f85f30ddb43873dca2a16e5abb94c700"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "325caf32de55ed3452e301710c3efc37a5a27263cb801b5cce57323352daf08d"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100163,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "b6da9bc2158344d5e832258e21af6c8450ea0e9f782fed25d2fbb84a06ed5207"
+        }
+      ],
+      "flags": [
+        "net14: ambiguous units s/yunit"
+      ],
+      "rows": 100163
+    },
+    {
+      "file": "RETENTION_DATA0_DC.vcsv.txt",
+      "bytes": 46060362,
+      "sha256": "665ce7c391ad910955a3a4e4a027435676f38c049da46f498467d2b0c8beab1c",
+      "id": "665ce7c391ad9109",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "39927df2860546d31c770e799f763a1ef03e653e6c6c78b685769e5748635d16"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "42698609cf12aec340f4bedc0299a44ecdf36e50d459d8d2abeda9a0a71eb5d2"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "96e89d38554829b4e20b5a19e2065793c8379472ba692805c132a94ce2c12f32"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "da11526b23c1029610bc775935fbf2c5df82797692d145f6671492f47a7c2ff8"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f2e49837c1e18b4275b9a2dc882b712129c933fb53ba206c99f364a3aee34bfe"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "81e5832c2205385bc7b76d160d7c81e31d5447d42542cabf1d647595c21ac0b5"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "53a8beab6705409346ea02af995431b0068da25a69e01cb22469e3094f001d24"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "b86b4f361266fe796e5e2274a18413c0f5d790fc9ab7b7c2bce59b138c7804aa"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "872e53d8a636089d5387d835910a09dc80ca42473ca1093dd978388765658128"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "491357bb4e2d28f1497e6dbc4bacefa8122dfe947c945752e2bd7ed7faf6a7b5"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d7933bdc3040e6b21f909edba5fe424d5670965d4ee919b9834f5935d22a08a8"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "953236d2d7bd21262b54f5310d38dbaecebe1df166744c274ec500ec68da14cf"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e7aca1a9bef4fdabc53fb451f974c75ba448baa8c22cf5a6c8f91bef4e7bc2c3"
+        }
+      ],
+      "flags": [],
+      "rows": 100194
+    },
+    {
+      "file": "RETENTION_DATA0_DC_FIXED.vcsv.txt",
+      "bytes": 46049363,
+      "sha256": "8091f48ed970c04ef3d6911940d253dfe33c78e52b2fd47b1fb7238d81b1b035",
+      "id": "8091f48ed970c04e",
+      "decision": "superseded",
+      "reason": "Related bit1 evidence; not independent of accepted mislabeled DATA0_DC export",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "86b1e1b4457104c4b1f0c0668b8a1924ec13cd0dc6261156da5fc9a9fe59aa4a"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f97dc20275a39eb5c3af8a2e12a6478895b50cd32cd759be4afc8b4365d167a9"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "0e63b1d1bf42d52c6f4629a0c007b171ea4840fbc0adb57ebd53e6d1d21d0030"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "37ae4b41983364ebf4b461171843996f0c8d0ca0d1da97138ebc48b76d3a1658"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ec5ad8a317f294e8c0390f8ca7392ad0af364ccea6a90c79fe3d5386c7d170af"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4572039fc909441236483f7958dcc6cf8da5bbfd3dd31542fc7160eb8a2dfbc5"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9d4e2657d68f9712bb8e7d668d749fbe16036867815380ec77b4cf1550bf140c"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ca38c74dc5c2ce8699a45b75fd92ff838aa1ecd6825afe2a01d66ee8a4e6d45b"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "64cdf61f59df762f54b9acca5acf53bb06204a1be02df3e7c5502dc64f9f037a"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6a79f5ecec0473a2bf4c11597e455c0486bb9b946be472f20a5c4eb2206b7e27"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6226241c3bce6014acd3a13d81d33a92ff117e178bdbb72a590a2c3c05bbbbe5"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "yunit",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [
+            "ambiguous units s/yunit"
+          ],
+          "sha256": "a52f0e816bfecca099e65cc556c78801a3a0d56bccb6a4a01bde191449e1664a"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "5ce1a5de987e13d522f816d6d57b02a1c993b7b6a6f2f098e42b687dfc01ce61"
+        }
+      ],
+      "flags": [
+        "net14: ambiguous units s/yunit"
+      ],
+      "rows": 100183
+    },
+    {
+      "file": "retention_data0_fresh.vcsv.txt",
+      "bytes": 50432212,
+      "sha256": "2dc42385b26723525f6ec7e7ff30074fdf6e3183af02e662a3d0c0ab06aca70e",
+      "id": "2dc42385b2672352",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "95439fd0debbbbd45b7320e5fe838725004d9f752c695cb2eb7998e6f273446d"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "aac03b400e2668360ad63680da541902bf096b91e22871badd36a205caa15b71"
+        },
+        {
+          "name": "V_DATA/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "d8b312934e1eaa85b7562180f8e36b4bbbeaf7a63c50874c135c4d2b2680f89f"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "9daac5b8975c6c62149605f0fb25bc5b0721bd3f5d6194febe6bca1a4c0bde52"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1141fd830da7e8b31d91cfbb6047b77dddd09e67803316a6d747faa151df763d"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "7e9bdb6643ea9d2bb311ed479c7cc856fee23c8a53fa64c178990ba9e3ee32c0"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "eb61b57c1e5b636c1a7faa7a3124af9f963408c7ab07b5a938f5724a95915ce1"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "94eae4d80b8b31a03826d3dacc31ea6dfbc5725d052aa9b4adcf4471115fe4d8"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "42f257377fd900623e64a83db78600236fef96df1b50e10de3e0cf0a5ea1eaab"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "6afdbbd21539c5f25f47e1f73269b3ae6f5fd699bbc2e815f6a93505e3ec1706"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "83debe0926b71e160fa1c2bacf3a9faa9e31dc5a0ea2804c8f39dc5d5bfd68a5"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "43abde2b66b5a75eedc9685b7584cf35e12d8c12dffbe46a0873a66ec376d363"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8debbf22cb9284f4ab7c52b76eb1e7c6022fcd3a70aa183671a1fcd7e8c1cfcd"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100183,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "1ff0065cf98adbab22afa758f00e6389c3f243f56f371d169e4886c880c87f92"
+        }
+      ],
+      "flags": [],
+      "rows": 100183
+    },
+    {
+      "file": "retention_data1_85c.vcsv.txt",
+      "bytes": 46046435,
+      "sha256": "72a4756270ff45548106f9fe8b2609a4d388dfd1330941a47cee6a43bf467ad0",
+      "id": "72a4756270ff4554",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "ba75a84058ca8c6a2e5257d4bf5c365243a03d693bca54f96157146f9ed03dea"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "91961063ccc7380c3ec806a4a5124d8c432545093ceb15802baf1db8e05f0afe"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "384681c794a356fb1f7cbf92ae87681855fc3933c42e92622cc10de29dd83333"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "50cb1c58d5870143fb20c71a583ac1903a4d85da304384547e38a987adc8ab1f"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "fa9d45bcdde8e9fee31010eb48a81ec08a883616f41d44f67ca9cacfdf3a39b9"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "5c67f0cc9d8df1e315b8858b3a8d78769d94eadc45d94122e70a33a512caf906"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "c166e60d52a0178aac02cb9b85e91b580a03c50c24a93abe8a11fab2238ab412"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e25e54947e4db9e6da4e7824b4bfe2ac3641996e481c754ca761d0b2353ca3b2"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "e9ee2dad6f97823e339543eb755e7bfa5faead4dac0f17e15666b881edb92b17"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "8ffe5c153619d6403c781be8df444fc9b735ba82d03deed1433d281019661cb6"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "55dea3ce1f5ac18c39e414a0ae694014c2036b2f6034e515ef32857783adff7a"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "be2a328d936fa8880a4aba9f69eb80b8fed2897aac51d4dc5329eefb84bfe73e"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100168,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f321bcaf36f65049c7a6d60060bab2bcc7d60a064cbfd3479da9dd0e48f2dabf"
+        }
+      ],
+      "flags": [],
+      "rows": 100168
+    },
+    {
+      "file": "RETENTION_VDATA_1.vcsv.txt",
+      "bytes": 47796733,
+      "sha256": "bcac0125d270174633d13953eff153c2e6b2b12115ed73dafaba63cd0b46e70b",
+      "id": "bcac0125d2701746",
+      "decision": "superseded",
+      "reason": "Related bit1 evidence; not independent of accepted mislabeled DATA0_DC export",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "39927df2860546d31c770e799f763a1ef03e653e6c6c78b685769e5748635d16"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "42698609cf12aec340f4bedc0299a44ecdf36e50d459d8d2abeda9a0a71eb5d2"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "96e89d38554829b4e20b5a19e2065793c8379472ba692805c132a94ce2c12f32"
+        },
+        {
+          "name": "V_PERB/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "4d5f5bc08293eeef6cdaba56aea6172be64edd6a897b2450d857b1bf983acbc7"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "da11526b23c1029610bc775935fbf2c5df82797692d145f6671492f47a7c2ff8"
+        },
+        {
+          "name": "V_WEN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "58b2e4e9eff37285e0fc1c8c3bdfd5d827e735d32ea83a4eae5d75a6bbfb7673"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "f2e49837c1e18b4275b9a2dc882b712129c933fb53ba206c99f364a3aee34bfe"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "81e5832c2205385bc7b76d160d7c81e31d5447d42542cabf1d647595c21ac0b5"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "53a8beab6705409346ea02af995431b0068da25a69e01cb22469e3094f001d24"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "b86b4f361266fe796e5e2274a18413c0f5d790fc9ab7b7c2bce59b138c7804aa"
+        },
+        {
+          "name": "net10",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "872e53d8a636089d5387d835910a09dc80ca42473ca1093dd978388765658128"
+        },
+        {
+          "name": "net11",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 100194,
+          "min_x": 0.0,
+          "max_x": 1e-07,
+          "flags": [],
+          "sha256": "491357bb4e2d28f1497e6dbc4bacefa8122dfe947c945752e2bd7ed7faf6a7b5"
+        }
+      ],
+      "flags": [],
+      "rows": 100194
+    },
+    {
+      "file": "SEL0.vcsv.txt",
+      "bytes": 374743,
+      "sha256": "1aed8fa2b55073a74c2eeb20f6259cbb03eaa05e1dad883ce44608e9b9f8a2ec",
+      "id": "1aed8fa2b55073a7",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "003afc41993d43d3679d69fe09d4075e90d6e920ed6bc85de2114a907f63c8bf"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0dd9e07c91cb5a03cd48c0a832e0333ce4ffdfd22f4fea675190d934c9d09bf9"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f0a5f49916405b3e374206f5f4fd554ce6f4815d5865a835a95d85b17407dd8b"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "05cf627c4c4a875156fce0fa79cde72f665f3873a05194c45aaf9c19ebcac5f1"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d9ac922d60cd6f5534309cb7061679cdc3abe0e854ae7d401cdd0f4983f31663"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6a5ac0645b8bb4301d9aa7654413c9f20799d9bc735e341a06aefa660b404229"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "275215ab0810efb9f5768f246445df2db4db4b6c47c593434bb9d49a532c8eb8"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "a664b15a7c565d8723422b8f57b3e79fb931c8b3ed025acde632ba17f67a0700"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "23246781d73184d46854c4a35c8bcc818f2bd0992a0831e14c380fd62bebb924"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6c28cc99b240d99f861d0da6fc6809c059ad2d4759de540497f5a71dfdb972c5"
+        }
+      ],
+      "flags": [],
+      "rows": 1041
+    },
+    {
+      "file": "sel01ps.vcsv.txt",
+      "bytes": 27472627,
+      "sha256": "a3beca33fe728b742df8d4f0e48647f7e082daf595f7c0fb0d343c6412af7fc8",
+      "id": "a3beca33fe728b74",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "cfb58fb3ffe23f4e15eac4167e6078d67d8ae0d46f8e2f23ffeee1eb878bb418"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9f625ede1819dc24b54157f6f6e0f205dbce2248544f8f02eaac40e2315710b1"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b596773ee62ded109acbfbf9e1c12090c4c3b5fd9d706e65f5ae9817c8b866db"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "06831dd8ecde4e5dd35ea1a5a3b0f411aa55463d8cd3b423004791fd086a213d"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "223f160b7c29d3e484110e377db3f5854ee10f18ae83ce494c8dfa92b082ba20"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f677d264558e3e3583065bf41293207aa57369d422a958677e5065a9dec5e2d3"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "def5cad7c0f6a1269a04d495e7d3202b3ebcf97898366ad566fd3ab1496100bb"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "27fa8e2b5181c4541945ecc4f25a0d95e1003bfef6626cb659d6d1edc679953d"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "5e6fc41f999450c5a9e721711616596789192ef34b67f10b221bc2f97b28cbb8"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "a6fb96dd22086f8407259d0fdb445f9eb67e85c2727bfe9b911ca1c4f9010e2b"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2f05ddcaacc8ccc8c928a72a4fd797099aa0cba1a64bcdd061764e8322a81cc6"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60258,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "ff782b6d7c24c91b4e30dee0cdb6cb734c2ba056deb083d20cdf25b7d3db8543"
+        }
+      ],
+      "flags": [],
+      "rows": 60258
+    },
+    {
+      "file": "sel0conservative.vcsv.txt",
+      "bytes": 931926,
+      "sha256": "e73d7eca4289d6af0f1b69a2f4b9907f41454b1112df06a166421846b47f2113",
+      "id": "e73d7eca4289d6af",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8680fed7f402582ea5c0b9228baee378fbac02f04e4c9d4e39108840fa805589"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "7f2aeb61356e286967642a70a6c217c7e4d88881c6c7ad6b5645cc5c905f8ce4"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "03343fce09e50f7d5ac70f5d6c35b0ee203f06148fd1c57eba63f3acaa1d890d"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "fb9c457c3830ef8b257e0c75164ed6d6d2d89ebf4b3045bc782e8b0a92f70095"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c47d9df169fc35013690d3e46bb0a21bf3be059f6fa868c17d27d9b68a530f42"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "03a9b41604b8dc2dfdc1346692c76da8a54e15c23befbf8999811d01a447a825"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c3e7d2a0115a896d0e3d6f2e0c98300d33ba53c63003722be452bf8a652cbc1a"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "eccdb58cf2b3b1c539d285fcbff717fc5e94c225854247b431d7ac6b8f7035b8"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "eaebe3204d104ade13a239115b7ebe7518a1507cb8d7abc33da058bdbfe1302c"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b57ac0c2efa98ba149cfd967ffffc3ccd3bfc7736a1037b58763915985408b09"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "da24c7b1b8d2df62fbb7eb2f9430df7d80b4c54ad899071e511b3c617ffa3fab"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2061,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d272a1945d7efdede26116ff1f40e43a650dea5230b4b36c751d4b886a6d5f0b"
+        }
+      ],
+      "flags": [],
+      "rows": 2061
+    },
+    {
+      "file": "sel0updated.txt",
+      "bytes": 27478215,
+      "sha256": "235bae567fbb388fb71e73bf9395aa9b5be38bc37c218e2d180e622f594e7377",
+      "id": "235bae567fbb388f",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8a42935b6403de7ebd43b28ffa6a755c29d13f862d6b8d6367479852e60642d0"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d83d984b01556287bac047cf797a4984cbc5773de7bd04f8173bfcf3022bfef6"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "ce9c5ea17a4e6afbcb3244aaf42f4630a147a9c86c9bd356078e635fb74283f5"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "82a49d3ef75f61d06e7f9c1e4d3b319de26e9eacc049c1abf1e5cfba68cafd66"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "eabff050d7b8269200026ced474740272d45c7f5ddbcceacbce455d1b639e531"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "1de8346ebac040b2391bf0c752d32a8018c0ad745f48fdf7f2fdbe6939f5a043"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "dc33bce5182e01beac0763342be0d2c27a33820515d297d3535d6fc00c05e43f"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "7b255ebb4f59e85ad47b5e95a5af7aa49f8fde3b8f5a916cb3037f0f06fc96cc"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "04634cbee3497f91a469d5831026258343a63c7734d391f607f614eb0ef9e9b6"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "51f524b908dd9a5db8a15a0e9a907f802d3f6582434f35c03cb94a5482f7ee8f"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "2d1c127ae594a5ed6c4013588d8bd1a79365dc2ace16adf60ca99e7bacf09092"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60284,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "bfffcbc7515f575f86ae76cbb6d4594431a1d0fee8a2049c220e9191f25576a3"
+        }
+      ],
+      "flags": [],
+      "rows": 60284
+    },
+    {
+      "file": "sel0updated.vcsv.docx",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "id": "e3b0c44298fc1c14",
+      "decision": "rejected",
+      "reason": "Empty non-numerical file",
+      "signals": [],
+      "flags": [
+        "No columns to parse from file"
+      ],
+      "failure_category": "missing_data"
+    },
+    {
+      "file": "SEL1.vcsv.txt",
+      "bytes": 375614,
+      "sha256": "aa9d878608e8fc00d1f8c9ea818e40169c85a35a751fa4bfc940576bf96282ce",
+      "id": "aa9d878608e8fc00",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "e78807b6354d735551258b0d396e46b60d4096dc0e66429bb899b624ce235ce5"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8a80287867a6f10a407c7f66c541c72a2b8e873db6af5803247a5e086204a834"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "cafa47b2b140118c47df16e4d1a62020833ccbedbfb88397a67cdf02babe0d8a"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b70ec675269542ca34754e4fa87f6def50f3f0b32aee11f0ef89bf758518b76f"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6de5829ce90d6a92d517553c604885e97bcd6e0c558fc4b488942ca0d2729af5"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "53da8796cb727c0854971ec0b88a938d6932a3d6cf0de6a54ba0eae447412706"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3c0633a30fcdcc179cb2e8d5c68757ded623e206be052898fec0679e1aa19d81"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "43c4ce7550812ff66df8ecdbdca9e522c3cd622d67d7d51444ce79d0fb8572a9"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "a53833b2177f0d0326f0c73ebc4d1ee0b300feb87daa24106abd051a9d08fb6c"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b77a9c6adc38be46bedad58539bc51dd16aba06069ce8fa632ebb14399a1d6f7"
+        }
+      ],
+      "flags": [],
+      "rows": 1046
+    },
+    {
+      "file": "sel1conservative.vcsv.txt",
+      "bytes": 1022550,
+      "sha256": "68aaf495f995373a773e3f55775cb9133de4ba8cb059a003f6fc6add23ed52c8",
+      "id": "68aaf495f995373a",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "30c642a03676490e14d0e388ec547436b89ee903abf43b0a1111dd386a56467c"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9466a68ecbf5383c931c32493ff528c7a0bc5f44ec9acdcb8a452d5dad34fe84"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "e9ad2ddb7e57eac59dc674f5f7abc9bf22ddb730128a9824d7719d8e7413e903"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "ac5be4339bf34118b2611ec617cd35d5bda81f25e3f2d9348483d2e8d1d50609"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "276544aa7b49923cd91564d4bdec4a263344738017b3f98d0550406d606b836a"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "a858265e30f8fc39cbe2b4d5504f2302c4ba71b2c2552854f9561bdcbf36e3eb"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "f08be848c1a030b39a944ba13e350261aac2ebecf473fc903f36db221d42e003"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "92a495e98e42207cfa8feb995520f3fe65b2db39e1c45413001d93e350a816e5"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "8702b68b5f366403986425cea95d696885007bff79f893e1e21f04616536fdf6"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "db99ce0b65d4813b264afe250baf00dcc54a3fdc1e498fe2a0a6b4242f54f824"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "698e639539495b224652d20fff2d0fa4d09348a1c751b9387fada48bd3540a45"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 2263,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "dc62729c0672720e9ebcfb59706b1ede4ec914df1f986270c9a1d6f5a4843db2"
+        }
+      ],
+      "flags": [],
+      "rows": 2263
+    },
+    {
+      "file": "sel1ps.vcsv.txt",
+      "bytes": 27404641,
+      "sha256": "91e55c15f4bd832cea16d29a456f38d7e51cdcc09b7f071e7e89db52c6d38b20",
+      "id": "91e55c15f4bd832c",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0254197c579615578cea6edb7d86d31fe9bf9df0c797d230d1bb5bd4679bdec4"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "d23f749fce69cfde9295d2fcecfe24e38c8baef2548acb35fd550877ed6ca0fd"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3213f9d246761ca5983f73e4c77ab55561a4d24e85ee6a34a45402ffd23c8ed4"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c54fd8df42089ff7691c740bb47e11d799eba23e75e1c7289f644182b268d30e"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "89656b90a631d629c9fd82ff19b00f253373b9501d4ed1e44459c7d338b9d109"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "b93ef149c18bdec96d9a5dc01718940012b915aed8fa6e5e8f64c0ac2f67b4e4"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "ffe93d7fe68b2ca5f2ba4041673b032dc772bfcc8d7a611a0bce8ee15bd46a5d"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "3429f458ed512e53899895a8da9ef7469801937555e45e8d87a52fb7e06f19f7"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c35c624e27317a6db90f594ca54eefae071cbd780da8ae1bcee623aac252a479"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "4f5e6dde02ec0c218126691e8895b3ff938ce00fdc1a310de4fe835a0f643c6c"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "0ebf67c391e20ea95c5ec52ec00ef1e02dbdf8a11fdf454ace2abf7f8fdddbbd"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60302,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "e0e49456db9fe6b9d354cbc755adc2a93072374a7329f4777c19f91c793ccdde"
+        }
+      ],
+      "flags": [],
+      "rows": 60302
+    },
+    {
+      "file": "sel1updated.vcsv.txt",
+      "bytes": 27431476,
+      "sha256": "14e634dff1ca06fdb68723f1f3a9f562ea9ede071ac1d6b0f676709c683b5aa9",
+      "id": "14e634dff1ca06fd",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "77e9cedcf7972b1cb254092481832a387f6f3ecd9b83e5c05fa5ed3a4c52fbd9"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "eb2ea20e6933f2bd2896b19621e74c598dbe998b9c0507fc032d1c1c7760b657"
+        },
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "63113bfd9d3b96a4c2f00906d601a14d3b98189c73ae28f6bf9877436fc57c17"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "082497a7b569ba47514876b8580f254c78e414d72b2fec177c3d7f6cf799d57d"
+        },
+        {
+          "name": "net1",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "476d1ff25e5d934a5429e42fb0ea1c2352a1cbe7f8b3c7958b24adc632311de3"
+        },
+        {
+          "name": "net2",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "daa53091109e89acc8fa349e3ed17f87fb241e93f2b52dc0bffc3ee2c82ebd98"
+        },
+        {
+          "name": "net3",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "da9b5d069913c24b21dd90ebbb2165cea8678ca2f3f5595069c67a80fb41f90f"
+        },
+        {
+          "name": "net4",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "82f72a8d29a037cc2c713083ddf9511eeffd151d1af1674bc6440bd549742dc3"
+        },
+        {
+          "name": "net5",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "5b28bd18e21b6c4b1ef923f00e15d1e3d64fd721c2b9bfdc7310bf89685b919b"
+        },
+        {
+          "name": "net13",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "5421b15e9ea9517ad33e26bf4608652984d8d4fa9a9bd93c7dea1d06b9be76a8"
+        },
+        {
+          "name": "net14",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "082ad8eef48f17d7337b27455e383467b7fdf5a46ec5888df340b779ef67fbae"
+        },
+        {
+          "name": "net19",
+          "axis_unit": "s",
+          "unit": "V",
+          "samples": 60378,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "eff0e44d5e778c15c887ab7310369a4481a85b754bcdb8a49479749983ffbbf9"
+        }
+      ],
+      "flags": [],
+      "rows": 60378
+    },
+    {
+      "file": "SELV0.vcsv.txt",
+      "bytes": 91533,
+      "sha256": "14cf33c38a55ce69622ecb7c80ce2597e8553d516f4aa6e0e28eef6f9876f0bb",
+      "id": "14cf33c38a55ce69",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "6a3024672ef5df57cee654c956f74ba692c5f87dd496788095cf2523b0310fef"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 1041,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "9a048197c8f4ad1d70df8f974515c7cd7a416523cbb76a7b130b998a61f7a5ee"
+        }
+      ],
+      "flags": [],
+      "rows": 1041
+    },
+    {
+      "file": "SELV1.vcsv.txt",
+      "bytes": 91917,
+      "sha256": "cf40cc67b74e0a9f9c3bfcad0ccbb641f3a34447060a75dc692f0afc74041ae0",
+      "id": "cf40cc67b74e0a9f",
+      "decision": "superseded",
+      "reason": "Earlier design revision, coarse/incomplete export or companion traces; excluded from final revision",
+      "signals": [
+        {
+          "name": "V_MIN/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c27d0124d6865256157ed9b506f6c2219d25506929f1f56a0ef6d13f1ec12102"
+        },
+        {
+          "name": "V_RET/PLUS",
+          "axis_unit": "s",
+          "unit": "A",
+          "samples": 1046,
+          "min_x": 0.0,
+          "max_x": 6e-08,
+          "flags": [],
+          "sha256": "c8c433bb1874839ed06650b3741fe60fabf6a2001d84e6c812b758c1aea6533f"
+        }
+      ],
+      "flags": [],
+      "rows": 1046
+    },
+    {
+      "file": "SNM_HOLD_08V_27C_F.txt",
+      "bytes": 93722,
+      "sha256": "f27bee4913732678763932132546f71aa4b8112a2a49f6c7e9f312e29839c0e2",
+      "id": "f27bee4913732678",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "a25fadc086b837218a429f9523f45ee82f0964a5bc56510de3db94ee005384ad"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "a25fadc086b837218a429f9523f45ee82f0964a5bc56510de3db94ee005384ad"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "9bfa020651844df3ee21a58699712a9dd2c3637e295c66258b3daad50123197f"
+        }
+      ],
+      "flags": [],
+      "rows": 801
+    },
+    {
+      "file": "SNM_HOLD_08V_85C_F.txt",
+      "bytes": 93594,
+      "sha256": "2e31fe05575391d4b74bca376511fd8e3af5b30ab0714febba6812ac6c12ef9e",
+      "id": "2e31fe05575391d4",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "b4911274d1c27b086f1967411e8d01068299cf7345068240441697ac23003433"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "b4911274d1c27b086f1967411e8d01068299cf7345068240441697ac23003433"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 801,
+          "min_x": 0.0,
+          "max_x": 0.8,
+          "flags": [],
+          "sha256": "9bfa020651844df3ee21a58699712a9dd2c3637e295c66258b3daad50123197f"
+        }
+      ],
+      "flags": [],
+      "rows": 801
+    },
+    {
+      "file": "SNM_HOLD_09V_27C.txt",
+      "bytes": 105340,
+      "sha256": "c70fb89abcfc311dfa1396f9835bc30df92283a7458b2672e67cd1c4a1ef20f2",
+      "id": "c70fb89abcfc311d",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "2ce6e49a619e0b46582f5ac59921552f87506148402f396ce7fb5cfbc5898f60"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "2ce6e49a619e0b46582f5ac59921552f87506148402f396ce7fb5cfbc5898f60"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "6ebf435b33948ac42e98e658e208a7f5162ac798dc7259ca090a0e8ecc7d1f21"
+        }
+      ],
+      "flags": [],
+      "rows": 901
+    },
+    {
+      "file": "SNM_HOLD_09V_85C.txt",
+      "bytes": 105220,
+      "sha256": "b2d79945955a8ef7a121c7c339c0ae8f34baaacfbacd4311f647403fb1969a6d",
+      "id": "b2d79945955a8ef7",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "000c2ffabe40b79b6e503b6573ed03cbb85ce382abd3393f5712e0fe04b44d3e"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "000c2ffabe40b79b6e503b6573ed03cbb85ce382abd3393f5712e0fe04b44d3e"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "6ebf435b33948ac42e98e658e208a7f5162ac798dc7259ca090a0e8ecc7d1f21"
+        }
+      ],
+      "flags": [],
+      "rows": 901
+    },
+    {
+      "file": "SNM_HOLD_1V_27C.txt",
+      "bytes": 205387,
+      "sha256": "66f1f491e35aecac86bd611da772b9e48cd95156957d9c39fe6552a38e2f77b4",
+      "id": "66f1f491e35aecac",
+      "decision": "rejected",
+      "reason": "Floating pull-down/WL; invalid VTC and reverse sweep in historical record",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1792,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [
+            "nonmonotonic axis"
+          ],
+          "sha256": "a1a1111c3f202e159c2395e43e737887ccba2c2a9519693274233d406080ccbe"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1792,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [
+            "nonmonotonic axis"
+          ],
+          "sha256": "a1a1111c3f202e159c2395e43e737887ccba2c2a9519693274233d406080ccbe"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1792,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [
+            "nonmonotonic axis"
+          ],
+          "sha256": "49f22b69c30cc3ac99fa9f928e5b58490f0058dfc9ed3dc0426d2567384e479c"
+        }
+      ],
+      "flags": [
+        "Q: nonmonotonic axis",
+        "QB: nonmonotonic axis",
+        "VIN: nonmonotonic axis"
+      ],
+      "rows": 1792
+    },
+    {
+      "file": "SNM_HOLD_1V_27C_F.txt",
+      "bytes": 116986,
+      "sha256": "8c5c8d0e8855330fde34413d41def1045890cd30d3212404a063bc8b6d61769d",
+      "id": "8c5c8d0e8855330f",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "4136bafeb3f0db6e10f6e8520a12ed938ebfae74b9574f4c99437af1a8b70b3d"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "4136bafeb3f0db6e10f6e8520a12ed938ebfae74b9574f4c99437af1a8b70b3d"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "3215235684c5600fcc07439b499fc4dddb168567ebedfb3db6f69b01c506a9a7"
+        }
+      ],
+      "flags": [],
+      "rows": 1001
+    },
+    {
+      "file": "SNM_HOLD_1V_85C.txt",
+      "bytes": 116862,
+      "sha256": "003247c61913c6df69f66a2e8a2eb2a2dd32680ccecd7e2eb67e8482d99ad9b8",
+      "id": "003247c61913c6df",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "f30bf2a9603da10e4e8250eb7473fce176124a418e4081215f69484b697ba3b5"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "f30bf2a9603da10e4e8250eb7473fce176124a418e4081215f69484b697ba3b5"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "3215235684c5600fcc07439b499fc4dddb168567ebedfb3db6f69b01c506a9a7"
+        }
+      ],
+      "flags": [],
+      "rows": 1001
+    },
+    {
+      "file": "SNM_READ_09V_27C.txt",
+      "bytes": 103126,
+      "sha256": "427530f571b03114c511f51569618714df27f65193354d64c3da497b21711be9",
+      "id": "427530f571b03114",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "e7979f18467a195751a3873689e5e760aa81b0fb93fd5786f1d932d064a63d2f"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "e7979f18467a195751a3873689e5e760aa81b0fb93fd5786f1d932d064a63d2f"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "6ebf435b33948ac42e98e658e208a7f5162ac798dc7259ca090a0e8ecc7d1f21"
+        }
+      ],
+      "flags": [],
+      "rows": 901
+    },
+    {
+      "file": "SNM_READ_09V_85C.txt",
+      "bytes": 103138,
+      "sha256": "63a6598a6d9f198984a66442530655538dce4a893067a9abf612004436acecbf",
+      "id": "63a6598a6d9f1989",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "ccfd9ae08bf01fd631b6e66ad83136f2ce7035a7fae31e2d96c357521a873c81"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "ccfd9ae08bf01fd631b6e66ad83136f2ce7035a7fae31e2d96c357521a873c81"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 901,
+          "min_x": 0.0,
+          "max_x": 0.9,
+          "flags": [],
+          "sha256": "6ebf435b33948ac42e98e658e208a7f5162ac798dc7259ca090a0e8ecc7d1f21"
+        }
+      ],
+      "flags": [],
+      "rows": 901
+    },
+    {
+      "file": "SNM_READ_1V_27C_F.txt",
+      "bytes": 114636,
+      "sha256": "873fc079d572b27b1b96f6121fd6a5ae391fcee296805fe9804fcdbb310ea578",
+      "id": "873fc079d572b27b",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "8a1b83508576aabf3bbf32f8a6151d03cb4cef13df7ebf3a13975b88f09ffe4d"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "8a1b83508576aabf3bbf32f8a6151d03cb4cef13df7ebf3a13975b88f09ffe4d"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "3215235684c5600fcc07439b499fc4dddb168567ebedfb3db6f69b01c506a9a7"
+        }
+      ],
+      "flags": [],
+      "rows": 1001
+    },
+    {
+      "file": "SNM_READ_1V_85C_F.txt",
+      "bytes": 114620,
+      "sha256": "c2cc08a8ae4179d7646d6259faaba60281ce53d30aba3e2e7833e70c7a102d53",
+      "id": "c2cc08a8ae4179d7",
+      "decision": "accepted",
+      "reason": "Final configured revision; signal/window checks applied",
+      "signals": [
+        {
+          "name": "Q",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "c2b00c7a319031ef304a1f0d2ce195f13b88e6eeb18dd30cb6a5294f6a27b792"
+        },
+        {
+          "name": "QB",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "c2b00c7a319031ef304a1f0d2ce195f13b88e6eeb18dd30cb6a5294f6a27b792"
+        },
+        {
+          "name": "VIN",
+          "axis_unit": "V",
+          "unit": "V",
+          "samples": 1001,
+          "min_x": 0.0,
+          "max_x": 1.0,
+          "flags": [],
+          "sha256": "3215235684c5600fcc07439b499fc4dddb168567ebedfb3db6f69b01c506a9a7"
+        }
+      ],
+      "flags": [],
+      "rows": 1001
+    }
+  ],
+  "exact_duplicates": [],
+  "shared_signal_groups": [
+    {
+      "signal": "Q",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "QB",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "V_MIN/PLUS",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net2",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net3",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net4",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net5",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net10",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net11",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net13",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net14",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net19",
+      "files": [
+        "ACTIVE_HOLD_DATA1.vcsv.txt",
+        "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "Q",
+      "files": [
+        "FILE .vcsv.txt",
+        "SEL0.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "QB",
+      "files": [
+        "FILE .vcsv.txt",
+        "SEL0.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net2",
+      "files": [
+        "FILE .vcsv.txt",
+        "SEL0.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "Q",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "QB",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "V_MIN/PLUS",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "V_RET/PLUS",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net2",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net3",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net4",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net5",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net10",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "net11",
+      "files": [
+        "RETENTION_DATA0_DC.vcsv.txt",
+        "RETENTION_VDATA_1.vcsv.txt"
+      ]
+    },
+    {
+      "signal": "VIN",
+      "files": [
+        "SNM_HOLD_08V_27C_F.txt",
+        "SNM_HOLD_08V_85C_F.txt"
+      ]
+    },
+    {
+      "signal": "VIN",
+      "files": [
+        "SNM_HOLD_09V_27C.txt",
+        "SNM_HOLD_09V_85C.txt",
+        "SNM_READ_09V_27C.txt",
+        "SNM_READ_09V_85C.txt"
+      ]
+    },
+    {
+      "signal": "VIN",
+      "files": [
+        "SNM_HOLD_1V_27C_F.txt",
+        "SNM_HOLD_1V_85C.txt",
+        "SNM_READ_1V_27C_F.txt",
+        "SNM_READ_1V_85C_F.txt"
+      ]
+    }
+  ],
+  "counts": {
+    "accepted": 30,
+    "superseded": 14,
+    "ambiguous": 1,
+    "rejected": 2
+  },
+  "accepted_waveform_rows": 1693678,
+  "provenance_limit": "Conditions combine historical setup/netlist record and trace checks; raw exports do not independently certify temperature, corner or complete topology."
+}

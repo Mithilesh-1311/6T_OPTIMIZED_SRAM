@@ -1,0 +1,464 @@
+{
+  "write0_ps": {
+    "features": [
+      "vdd_v",
+      "temp_c",
+      "mode"
+    ],
+    "records": [
+      {
+        "id": "792d79023d8ebb2b",
+        "file": "active_sel0_85c.vcsv.txt",
+        "sha256": "792d79023d8ebb2b26a79285b6a6d062f3e668eae7bed591f1cdd149ae129523",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 0,
+        "write0_ps": 20.45828518330432
+      },
+      {
+        "id": "ba8f8b35d02fd44f",
+        "file": "active_sel1_85c.vcsv.txt",
+        "sha256": "ba8f8b35d02fd44fb7e5eb6578587c34ceb58ddcf6db141ff87ae4d380144f58",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 1,
+        "write0_ps": 20.459057658571908
+      },
+      {
+        "id": "e7558dd4a27ea6c9",
+        "file": "active_vdd09_27c_sel0.txt",
+        "sha256": "e7558dd4a27ea6c92a609b496339bad1abf7d3d3e3aa19442366c0b5d46e0a46",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 0,
+        "write0_ps": 17.27607003485598
+      },
+      {
+        "id": "8ee0e512068f4173",
+        "file": "active_vdd09_27c_sel1_f.txt",
+        "sha256": "8ee0e512068f417375c3989073a975b607757909835b7bb37de5a09d49045f03",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 1,
+        "write0_ps": 17.27619126915309
+      },
+      {
+        "id": "9f60ee4bb8cb10a0",
+        "file": "active_vdd09_85c_sel0.txt",
+        "sha256": "9f60ee4bb8cb10a07fbe1d74d0fe20e4749bd6c81cdcf5f53d37e3a90eebfcb8",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 0,
+        "write0_ps": 22.433873917747377
+      },
+      {
+        "id": "4bcb361e507d93a8",
+        "file": "active_vdd09_85c_sel1_f.txt",
+        "sha256": "4bcb361e507d93a8c2a14bf415308c817e7ffb7cc0ba0e737c46f78067a34462",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 1,
+        "write0_ps": 22.433665520226278
+      },
+      {
+        "id": "235bae567fbb388f",
+        "file": "sel0updated.txt",
+        "sha256": "235bae567fbb388fb71e73bf9395aa9b5be38bc37c218e2d180e622f594e7377",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 0,
+        "write0_ps": 15.714572387271817
+      },
+      {
+        "id": "14e634dff1ca06fd",
+        "file": "sel1updated.vcsv.txt",
+        "sha256": "14e634dff1ca06fdb68723f1f3a9f562ea9ede071ac1d6b0f676709c683b5aa9",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 1,
+        "write0_ps": 15.714060620308151
+      }
+    ]
+  },
+  "write1_ps": {
+    "features": [
+      "vdd_v",
+      "temp_c",
+      "mode"
+    ],
+    "records": [
+      {
+        "id": "792d79023d8ebb2b",
+        "file": "active_sel0_85c.vcsv.txt",
+        "sha256": "792d79023d8ebb2b26a79285b6a6d062f3e668eae7bed591f1cdd149ae129523",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 0,
+        "write1_ps": 35.2175483320588
+      },
+      {
+        "id": "ba8f8b35d02fd44f",
+        "file": "active_sel1_85c.vcsv.txt",
+        "sha256": "ba8f8b35d02fd44fb7e5eb6578587c34ceb58ddcf6db141ff87ae4d380144f58",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 1,
+        "write1_ps": 35.21636181222712
+      },
+      {
+        "id": "e7558dd4a27ea6c9",
+        "file": "active_vdd09_27c_sel0.txt",
+        "sha256": "e7558dd4a27ea6c92a609b496339bad1abf7d3d3e3aa19442366c0b5d46e0a46",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 0,
+        "write1_ps": 30.924449633230086
+      },
+      {
+        "id": "8ee0e512068f4173",
+        "file": "active_vdd09_27c_sel1_f.txt",
+        "sha256": "8ee0e512068f417375c3989073a975b607757909835b7bb37de5a09d49045f03",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 1,
+        "write1_ps": 30.924027987660335
+      },
+      {
+        "id": "9f60ee4bb8cb10a0",
+        "file": "active_vdd09_85c_sel0.txt",
+        "sha256": "9f60ee4bb8cb10a07fbe1d74d0fe20e4749bd6c81cdcf5f53d37e3a90eebfcb8",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 0,
+        "write1_ps": 39.17059498261292
+      },
+      {
+        "id": "4bcb361e507d93a8",
+        "file": "active_vdd09_85c_sel1_f.txt",
+        "sha256": "4bcb361e507d93a8c2a14bf415308c817e7ffb7cc0ba0e737c46f78067a34462",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 1,
+        "write1_ps": 39.17064655172906
+      },
+      {
+        "id": "235bae567fbb388f",
+        "file": "sel0updated.txt",
+        "sha256": "235bae567fbb388fb71e73bf9395aa9b5be38bc37c218e2d180e622f594e7377",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 0,
+        "write1_ps": 27.756267547542706
+      },
+      {
+        "id": "14e634dff1ca06fd",
+        "file": "sel1updated.vcsv.txt",
+        "sha256": "14e634dff1ca06fdb68723f1f3a9f562ea9ede071ac1d6b0f676709c683b5aa9",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 1,
+        "write1_ps": 27.754795491316322
+      }
+    ]
+  },
+  "active_energy_fj": {
+    "features": [
+      "vdd_v",
+      "temp_c",
+      "mode"
+    ],
+    "records": [
+      {
+        "id": "792d79023d8ebb2b",
+        "file": "active_sel0_85c.vcsv.txt",
+        "sha256": "792d79023d8ebb2b26a79285b6a6d062f3e668eae7bed591f1cdd149ae129523",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 0,
+        "active_energy_fj": 215.7696788947277
+      },
+      {
+        "id": "ba8f8b35d02fd44f",
+        "file": "active_sel1_85c.vcsv.txt",
+        "sha256": "ba8f8b35d02fd44fb7e5eb6578587c34ceb58ddcf6db141ff87ae4d380144f58",
+        "group": "active:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "mode": 1,
+        "active_energy_fj": 213.301349031637
+      },
+      {
+        "id": "e7558dd4a27ea6c9",
+        "file": "active_vdd09_27c_sel0.txt",
+        "sha256": "e7558dd4a27ea6c92a609b496339bad1abf7d3d3e3aa19442366c0b5d46e0a46",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 0,
+        "active_energy_fj": 160.16695509812317
+      },
+      {
+        "id": "8ee0e512068f4173",
+        "file": "active_vdd09_27c_sel1_f.txt",
+        "sha256": "8ee0e512068f417375c3989073a975b607757909835b7bb37de5a09d49045f03",
+        "group": "active:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "mode": 1,
+        "active_energy_fj": 159.35756463699425
+      },
+      {
+        "id": "9f60ee4bb8cb10a0",
+        "file": "active_vdd09_85c_sel0.txt",
+        "sha256": "9f60ee4bb8cb10a07fbe1d74d0fe20e4749bd6c81cdcf5f53d37e3a90eebfcb8",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 0,
+        "active_energy_fj": 169.12930088680554
+      },
+      {
+        "id": "4bcb361e507d93a8",
+        "file": "active_vdd09_85c_sel1_f.txt",
+        "sha256": "4bcb361e507d93a8c2a14bf415308c817e7ffb7cc0ba0e737c46f78067a34462",
+        "group": "active:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "mode": 1,
+        "active_energy_fj": 167.43454201648836
+      },
+      {
+        "id": "235bae567fbb388f",
+        "file": "sel0updated.txt",
+        "sha256": "235bae567fbb388fb71e73bf9395aa9b5be38bc37c218e2d180e622f594e7377",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 0,
+        "active_energy_fj": 204.08732572957933
+      },
+      {
+        "id": "14e634dff1ca06fd",
+        "file": "sel1updated.vcsv.txt",
+        "sha256": "14e634dff1ca06fdb68723f1f3a9f562ea9ede071ac1d6b0f676709c683b5aa9",
+        "group": "active:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "mode": 1,
+        "active_energy_fj": 202.83385857169995
+      }
+    ]
+  },
+  "quiet_power_uw": {
+    "features": [
+      "vret_v",
+      "temp_c",
+      "bit"
+    ],
+    "records": [
+      {
+        "id": "8d72e30946619429",
+        "file": "ret_data0_27c_vret08.vcsv.txt",
+        "sha256": "8d72e309466194292fe081e7aff26e0a833c4502418632e7e7a0b9dd52bfc6c7",
+        "group": "retention:0.8:27",
+        "vret_v": 0.8,
+        "temp_c": 27,
+        "bit": 0,
+        "quiet_power_uw": 0.19852338059182578
+      },
+      {
+        "id": "f9b10e5483eadc52",
+        "file": "ret_data0_85c_vret08.vcsv.txt",
+        "sha256": "f9b10e5483eadc5233b72b8aa2e07ae81a5b0c8a64f64485947166945c14911c",
+        "group": "retention:0.8:85",
+        "vret_v": 0.8,
+        "temp_c": 85,
+        "bit": 0,
+        "quiet_power_uw": 0.41552718332459265
+      },
+      {
+        "id": "0c54198fa1c53512",
+        "file": "ret_data1_27c_vret08.vcsv.txt",
+        "sha256": "0c54198fa1c535125a2db359feb0f715d88b240649f33f0f2aa51ecff3675d7b",
+        "group": "retention:0.8:27",
+        "vret_v": 0.8,
+        "temp_c": 27,
+        "bit": 1,
+        "quiet_power_uw": 0.19748010762233942
+      },
+      {
+        "id": "1752a0e482237bdf",
+        "file": "ret_data1_85c_vret08.vcsv.txt",
+        "sha256": "1752a0e482237bdfac1e9e2c47dda793ab5b5ade77c1f3fd7effc9bd0569c18a",
+        "group": "retention:0.8:85",
+        "vret_v": 0.8,
+        "temp_c": 85,
+        "bit": 1,
+        "quiet_power_uw": 0.41446798564091214
+      },
+      {
+        "id": "21c0cc8a23c12f42",
+        "file": "retention_data0_85c.vcsv.txt",
+        "sha256": "21c0cc8a23c12f42fca997c0a9804f58545e7220aa18526b759f0645dcf63436",
+        "group": "retention:0.9:85",
+        "vret_v": 0.9,
+        "temp_c": 85,
+        "bit": 0,
+        "quiet_power_uw": 0.4286128161709157
+      },
+      {
+        "id": "665ce7c391ad9109",
+        "file": "RETENTION_DATA0_DC.vcsv.txt",
+        "sha256": "665ce7c391ad910955a3a4e4a027435676f38c049da46f498467d2b0c8beab1c",
+        "group": "retention:0.9:27",
+        "vret_v": 0.9,
+        "temp_c": 27,
+        "bit": 1,
+        "quiet_power_uw": 0.20464733675376343
+      },
+      {
+        "id": "2dc42385b2672352",
+        "file": "retention_data0_fresh.vcsv.txt",
+        "sha256": "2dc42385b26723525f6ec7e7ff30074fdf6e3183af02e662a3d0c0ab06aca70e",
+        "group": "retention:0.9:27",
+        "vret_v": 0.9,
+        "temp_c": 27,
+        "bit": 0,
+        "quiet_power_uw": 0.20569068050729417
+      },
+      {
+        "id": "72a4756270ff4554",
+        "file": "retention_data1_85c.vcsv.txt",
+        "sha256": "72a4756270ff45548106f9fe8b2609a4d388dfd1330941a47cee6a43bf467ad0",
+        "group": "retention:0.9:85",
+        "vret_v": 0.9,
+        "temp_c": 85,
+        "bit": 1,
+        "quiet_power_uw": 0.4275536239879568
+      }
+    ]
+  },
+  "hold_snm_mv": {
+    "features": [
+      "vdd_v",
+      "temp_c"
+    ],
+    "records": [
+      {
+        "id": "f27bee4913732678",
+        "file": "SNM_HOLD_08V_27C_F.txt",
+        "sha256": "f27bee4913732678763932132546f71aa4b8112a2a49f6c7e9f312e29839c0e2",
+        "group": "hold_snm:0.8:27",
+        "vdd_v": 0.8,
+        "temp_c": 27,
+        "hold_snm_mv": 248.5017898370721
+      },
+      {
+        "id": "2e31fe05575391d4",
+        "file": "SNM_HOLD_08V_85C_F.txt",
+        "sha256": "2e31fe05575391d4b74bca376511fd8e3af5b30ab0714febba6812ac6c12ef9e",
+        "group": "hold_snm:0.8:85",
+        "vdd_v": 0.8,
+        "temp_c": 85,
+        "hold_snm_mv": 244.11343008688925
+      },
+      {
+        "id": "c70fb89abcfc311d",
+        "file": "SNM_HOLD_09V_27C.txt",
+        "sha256": "c70fb89abcfc311dfa1396f9835bc30df92283a7458b2672e67cd1c4a1ef20f2",
+        "group": "hold_snm:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "hold_snm_mv": 265.3542218031036
+      },
+      {
+        "id": "b2d79945955a8ef7",
+        "file": "SNM_HOLD_09V_85C.txt",
+        "sha256": "b2d79945955a8ef7a121c7c339c0ae8f34baaacfbacd4311f647403fb1969a6d",
+        "group": "hold_snm:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "hold_snm_mv": 261.8484593861208
+      },
+      {
+        "id": "8c5c8d0e8855330f",
+        "file": "SNM_HOLD_1V_27C_F.txt",
+        "sha256": "8c5c8d0e8855330fde34413d41def1045890cd30d3212404a063bc8b6d61769d",
+        "group": "hold_snm:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "hold_snm_mv": 279.86877020965153
+      },
+      {
+        "id": "003247c61913c6df",
+        "file": "SNM_HOLD_1V_85C.txt",
+        "sha256": "003247c61913c6df69f66a2e8a2eb2a2dd32680ccecd7e2eb67e8482d99ad9b8",
+        "group": "hold_snm:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "hold_snm_mv": 277.22844715384383
+      }
+    ]
+  },
+  "read_snm_mv": {
+    "features": [
+      "vdd_v",
+      "temp_c"
+    ],
+    "records": [
+      {
+        "id": "427530f571b03114",
+        "file": "SNM_READ_09V_27C.txt",
+        "sha256": "427530f571b03114c511f51569618714df27f65193354d64c3da497b21711be9",
+        "group": "read_snm:0.9:27",
+        "vdd_v": 0.9,
+        "temp_c": 27,
+        "read_snm_mv": 97.29124424362817
+      },
+      {
+        "id": "63a6598a6d9f1989",
+        "file": "SNM_READ_09V_85C.txt",
+        "sha256": "63a6598a6d9f198984a66442530655538dce4a893067a9abf612004436acecbf",
+        "group": "read_snm:0.9:85",
+        "vdd_v": 0.9,
+        "temp_c": 85,
+        "read_snm_mv": 94.17248336209255
+      },
+      {
+        "id": "873fc079d572b27b",
+        "file": "SNM_READ_1V_27C_F.txt",
+        "sha256": "873fc079d572b27b1b96f6121fd6a5ae391fcee296805fe9804fcdbb310ea578",
+        "group": "read_snm:1.0:27",
+        "vdd_v": 1.0,
+        "temp_c": 27,
+        "read_snm_mv": 98.38631256244074
+      },
+      {
+        "id": "c2cc08a8ae4179d7",
+        "file": "SNM_READ_1V_85C_F.txt",
+        "sha256": "c2cc08a8ae4179d7646d6259faaba60281ce53d30aba3e2e7833e70c7a102d53",
+        "group": "read_snm:1.0:85",
+        "vdd_v": 1.0,
+        "temp_c": 85,
+        "read_snm_mv": 95.51604991364898
+      }
+    ]
+  }
+}

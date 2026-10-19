@@ -1,0 +1,237 @@
+[
+  {
+    "file": "ACTIVE_HOLD_DATA0.vcsv.txt",
+    "bytes": 45985555,
+    "sha256": "977529a84bfde23967cca1f0af6fb22e330bca26f979c3fa13dda5a7e1686eba"
+  },
+  {
+    "file": "active_hold_data0_85c.vcsv.txt",
+    "bytes": 45973085,
+    "sha256": "0a1577c8e567d4574e5dcc793393789dcab979ece047978fe5e8052421df2d5d"
+  },
+  {
+    "file": "ACTIVE_HOLD_DATA1.vcsv.txt",
+    "bytes": 41610615,
+    "sha256": "f16c485a84f5464aafe81bf1a39e66848f4edcc54d092a031a18bbfa78751b72"
+  },
+  {
+    "file": "active_hold_data1_85c.vcsv.txt",
+    "bytes": 45979186,
+    "sha256": "f4573bc2ef0f8f4b299f1cbe00dab1b4725cba47e4a176f686418b3a368d067b"
+  },
+  {
+    "file": "ACTIVE_HOLD_DATA1_COMPLETE.vcsv.txt",
+    "bytes": 45994928,
+    "sha256": "07c3551a510c4a59847cf975d322ba125264363196ff31b722d2037c29c7d24e"
+  },
+  {
+    "file": "active_sel0_85c.vcsv.txt",
+    "bytes": 28878347,
+    "sha256": "792d79023d8ebb2b26a79285b6a6d062f3e668eae7bed591f1cdd149ae129523"
+  },
+  {
+    "file": "active_sel1_85c.vcsv.txt",
+    "bytes": 28816299,
+    "sha256": "ba8f8b35d02fd44fb7e5eb6578587c34ceb58ddcf6db141ff87ae4d380144f58"
+  },
+  {
+    "file": "active_vdd09_27c_sel0.txt",
+    "bytes": 29156207,
+    "sha256": "e7558dd4a27ea6c92a609b496339bad1abf7d3d3e3aa19442366c0b5d46e0a46"
+  },
+  {
+    "file": "active_vdd09_27c_sel1.txt",
+    "bytes": 29099096,
+    "sha256": "b94591276524dbaac056e31d576f9dd24ad9424f292b7d9fc3fc5a1bbdd8f06a"
+  },
+  {
+    "file": "active_vdd09_27c_sel1_f.txt",
+    "bytes": 29211455,
+    "sha256": "8ee0e512068f417375c3989073a975b607757909835b7bb37de5a09d49045f03"
+  },
+  {
+    "file": "active_vdd09_85c_sel0.txt",
+    "bytes": 29128232,
+    "sha256": "9f60ee4bb8cb10a07fbe1d74d0fe20e4749bd6c81cdcf5f53d37e3a90eebfcb8"
+  },
+  {
+    "file": "active_vdd09_85c_sel1.txt",
+    "bytes": 29075620,
+    "sha256": "102c07822ab9cf01e929c80d02bdf530e27dc0fb0c9c9187edc902b7b531f1ee"
+  },
+  {
+    "file": "active_vdd09_85c_sel1_f.txt",
+    "bytes": 29186030,
+    "sha256": "4bcb361e507d93a8c2a14bf415308c817e7ffb7cc0ba0e737c46f78067a34462"
+  },
+  {
+    "file": "FILE .vcsv.txt",
+    "bytes": 130744,
+    "sha256": "c428937bc4c29352254ddba73f08f1d9dc7e48dd0cc73afd7f6816b2528df73a"
+  },
+  {
+    "file": "ret_data0_27c_vret08.vcsv.txt",
+    "bytes": 50435890,
+    "sha256": "8d72e309466194292fe081e7aff26e0a833c4502418632e7e7a0b9dd52bfc6c7"
+  },
+  {
+    "file": "ret_data0_85c_vret08.vcsv.txt",
+    "bytes": 50426153,
+    "sha256": "f9b10e5483eadc5233b72b8aa2e07ae81a5b0c8a64f64485947166945c14911c"
+  },
+  {
+    "file": "ret_data1_27c_vret08.vcsv.txt",
+    "bytes": 50544487,
+    "sha256": "0c54198fa1c535125a2db359feb0f715d88b240649f33f0f2aa51ecff3675d7b"
+  },
+  {
+    "file": "ret_data1_85c_vret08.vcsv.txt",
+    "bytes": 50529171,
+    "sha256": "1752a0e482237bdfac1e9e2c47dda793ab5b5ade77c1f3fd7effc9bd0569c18a"
+  },
+  {
+    "file": "RETENTION_BIT0.vcsv.txt",
+    "bytes": 47854489,
+    "sha256": "504ccd5592a2f7eebdd56a78629f93ed1f6fe730b0995568d93bf7f363928891"
+  },
+  {
+    "file": "retention_data0_85c.vcsv.txt",
+    "bytes": 46040463,
+    "sha256": "21c0cc8a23c12f42fca997c0a9804f58545e7220aa18526b759f0645dcf63436"
+  },
+  {
+    "file": "RETENTION_DATA0_DC.vcsv.txt",
+    "bytes": 46060362,
+    "sha256": "665ce7c391ad910955a3a4e4a027435676f38c049da46f498467d2b0c8beab1c"
+  },
+  {
+    "file": "RETENTION_DATA0_DC_FIXED.vcsv.txt",
+    "bytes": 46049363,
+    "sha256": "8091f48ed970c04ef3d6911940d253dfe33c78e52b2fd47b1fb7238d81b1b035"
+  },
+  {
+    "file": "retention_data0_fresh.vcsv.txt",
+    "bytes": 50432212,
+    "sha256": "2dc42385b26723525f6ec7e7ff30074fdf6e3183af02e662a3d0c0ab06aca70e"
+  },
+  {
+    "file": "retention_data1_85c.vcsv.txt",
+    "bytes": 46046435,
+    "sha256": "72a4756270ff45548106f9fe8b2609a4d388dfd1330941a47cee6a43bf467ad0"
+  },
+  {
+    "file": "RETENTION_VDATA_1.vcsv.txt",
+    "bytes": 47796733,
+    "sha256": "bcac0125d270174633d13953eff153c2e6b2b12115ed73dafaba63cd0b46e70b"
+  },
+  {
+    "file": "SEL0.vcsv.txt",
+    "bytes": 374743,
+    "sha256": "1aed8fa2b55073a74c2eeb20f6259cbb03eaa05e1dad883ce44608e9b9f8a2ec"
+  },
+  {
+    "file": "sel01ps.vcsv.txt",
+    "bytes": 27472627,
+    "sha256": "a3beca33fe728b742df8d4f0e48647f7e082daf595f7c0fb0d343c6412af7fc8"
+  },
+  {
+    "file": "sel0conservative.vcsv.txt",
+    "bytes": 931926,
+    "sha256": "e73d7eca4289d6af0f1b69a2f4b9907f41454b1112df06a166421846b47f2113"
+  },
+  {
+    "file": "sel0updated.txt",
+    "bytes": 27478215,
+    "sha256": "235bae567fbb388fb71e73bf9395aa9b5be38bc37c218e2d180e622f594e7377"
+  },
+  {
+    "file": "sel0updated.vcsv.docx",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "SEL1.vcsv.txt",
+    "bytes": 375614,
+    "sha256": "aa9d878608e8fc00d1f8c9ea818e40169c85a35a751fa4bfc940576bf96282ce"
+  },
+  {
+    "file": "sel1conservative.vcsv.txt",
+    "bytes": 1022550,
+    "sha256": "68aaf495f995373a773e3f55775cb9133de4ba8cb059a003f6fc6add23ed52c8"
+  },
+  {
+    "file": "sel1ps.vcsv.txt",
+    "bytes": 27404641,
+    "sha256": "91e55c15f4bd832cea16d29a456f38d7e51cdcc09b7f071e7e89db52c6d38b20"
+  },
+  {
+    "file": "sel1updated.vcsv.txt",
+    "bytes": 27431476,
+    "sha256": "14e634dff1ca06fdb68723f1f3a9f562ea9ede071ac1d6b0f676709c683b5aa9"
+  },
+  {
+    "file": "SELV0.vcsv.txt",
+    "bytes": 91533,
+    "sha256": "14cf33c38a55ce69622ecb7c80ce2597e8553d516f4aa6e0e28eef6f9876f0bb"
+  },
+  {
+    "file": "SELV1.vcsv.txt",
+    "bytes": 91917,
+    "sha256": "cf40cc67b74e0a9f9c3bfcad0ccbb641f3a34447060a75dc692f0afc74041ae0"
+  },
+  {
+    "file": "SNM_HOLD_08V_27C_F.txt",
+    "bytes": 93722,
+    "sha256": "f27bee4913732678763932132546f71aa4b8112a2a49f6c7e9f312e29839c0e2"
+  },
+  {
+    "file": "SNM_HOLD_08V_85C_F.txt",
+    "bytes": 93594,
+    "sha256": "2e31fe05575391d4b74bca376511fd8e3af5b30ab0714febba6812ac6c12ef9e"
+  },
+  {
+    "file": "SNM_HOLD_09V_27C.txt",
+    "bytes": 105340,
+    "sha256": "c70fb89abcfc311dfa1396f9835bc30df92283a7458b2672e67cd1c4a1ef20f2"
+  },
+  {
+    "file": "SNM_HOLD_09V_85C.txt",
+    "bytes": 105220,
+    "sha256": "b2d79945955a8ef7a121c7c339c0ae8f34baaacfbacd4311f647403fb1969a6d"
+  },
+  {
+    "file": "SNM_HOLD_1V_27C.txt",
+    "bytes": 205387,
+    "sha256": "66f1f491e35aecac86bd611da772b9e48cd95156957d9c39fe6552a38e2f77b4"
+  },
+  {
+    "file": "SNM_HOLD_1V_27C_F.txt",
+    "bytes": 116986,
+    "sha256": "8c5c8d0e8855330fde34413d41def1045890cd30d3212404a063bc8b6d61769d"
+  },
+  {
+    "file": "SNM_HOLD_1V_85C.txt",
+    "bytes": 116862,
+    "sha256": "003247c61913c6df69f66a2e8a2eb2a2dd32680ccecd7e2eb67e8482d99ad9b8"
+  },
+  {
+    "file": "SNM_READ_09V_27C.txt",
+    "bytes": 103126,
+    "sha256": "427530f571b03114c511f51569618714df27f65193354d64c3da497b21711be9"
+  },
+  {
+    "file": "SNM_READ_09V_85C.txt",
+    "bytes": 103138,
+    "sha256": "63a6598a6d9f198984a66442530655538dce4a893067a9abf612004436acecbf"
+  },
+  {
+    "file": "SNM_READ_1V_27C_F.txt",
+    "bytes": 114636,
+    "sha256": "873fc079d572b27b1b96f6121fd6a5ae391fcee296805fe9804fcdbb310ea578"
+  },
+  {
+    "file": "SNM_READ_1V_85C_F.txt",
+    "bytes": 114620,
+    "sha256": "c2cc08a8ae4179d7646d6259faaba60281ce53d30aba3e2e7833e70c7a102d53"
+  }
+]

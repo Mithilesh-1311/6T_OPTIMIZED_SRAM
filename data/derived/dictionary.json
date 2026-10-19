@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "units": {
+    "write0_ps": "ps",
+    "write1_ps": "ps",
+    "active_energy_fj": "fJ",
+    "quiet_power_uw": "uW",
+    "hold_snm_mv": "mV",
+    "read_snm_mv": "mV",
+    "sequence_energy_fj": "fJ",
+    "transition_excess_fj": "fJ"
+  },
+  "definitions": {
+    "active_energy_fj": "Signed main+retention DC delivered energy, 20\u201360 ns",
+    "quiet_power_uw": "Mean signed DC delivered power, 25\u201365 ns",
+    "sequence_energy_fj": "Signed DC delivered energy, 19\u201375 ns, includes entry/hold/wake",
+    "transition_excess_fj": "Sequence energy minus quiet-power \u00d7 56 ns; an excess relative to quiet baseline, not isolated switch energy",
+    "snm": "Smaller of largest axis-aligned squares in two butterfly lobes; piecewise-linear VTCs",
+    "state_survived": "Both nodes beyond 80%/20% of instantaneous cell rail throughout 25\u201365 and 75\u2013100 ns; functional criterion, not SNM"
+  },
+  "mapping": {
+    "wl": "net2",
+    "bl": "net3",
+    "blb": "net4",
+    "cell": "net5",
+    "main": "net6",
+    "wen": "net13",
+    "data": "net14",
+    "preb": "net19"
+  }
+}

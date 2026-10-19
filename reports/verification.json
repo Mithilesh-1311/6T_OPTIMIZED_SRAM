@@ -1,0 +1,26 @@
+{
+  "date_utc": "2026-10-19T11:33:21.641787+00:00",
+  "model_version": "314a27cadc8c",
+  "dataset_version": "56fd2a89b9e4",
+  "python_tests_passed": 18,
+  "node_tests_passed": 2,
+  "typescript": "passed both workspaces",
+  "production_build": "passed frontend and backend",
+  "live_integration": "passed Vite -> Node -> Python, inference, measurements, waveforms, report equality",
+  "actual_full_job_seconds": 66.36,
+  "job_stages_observed": [
+    "hashing",
+    "ingestion",
+    "extraction",
+    "training",
+    "completed"
+  ],
+  "single_writer_rejection": "passed",
+  "original_hash_inventory": "unchanged",
+  "pip_check": "no broken requirements",
+  "repeat_evaluation": "exact evaluation equality in repeated fixed-seed runs",
+  "browser_visual_smoke": "not run: browser-control service unavailable",
+  "new_cadence_runs": false,
+  "target_90_established": false,
+  "final_test_cases": 0
+}

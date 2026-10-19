@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+.pip-cache/
+.venv/
+__pycache__/
+.pytest_cache/
+dist/
+*.log
+.env
+artifacts/jobs.sqlite*
+data/uploads/
+CSVs/
+/SAMS_End_to_End_Master_Guide*.md
+/*.png
+artifacts/*/
