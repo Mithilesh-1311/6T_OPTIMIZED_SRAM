@@ -50,3 +50,26 @@ Safety certification, automatic circuit control, minimum retention-voltage claim
 
 ## Artifact compatibility
 Python 3.10, pinned requirements, schema version 1, exact scikit-learn version checked before inference. Artifacts are trusted locally generated joblib files; user uploads cannot supply models or code. Each current artifact directory stores evaluation, extracted evidence, target tables and numerical source snapshots. Dataset and model versions are returned by the service. Regenerate instead of loading a model produced by a different library/schema version.
+
+## Verified tolerance reporting (release preparation)
+
+Scores below are recalculated from the frozen out-of-fold predictions, not from selected-case fit. Tolerance is max(10% of absolute measurement, the predeclared absolute floor). Zero labels remain eligible; missing/nonfinite labels invalidate the report rather than becoming zero. No thresholds, authoritative models or historical evaluation artifacts changed.
+
+All scores are **exploratory model-selection validation**, not an untouched independent final test. The source records a predeclared ridge model; because results have been available during development, the release reports them conservatively as model-selection validation. Historical timing of the declaration cannot be independently certified.
+
+| Target | Within tolerance | Passing / cases | Groups | MAE | RMSE | Constant baseline | Final test |
+|---|---:|---:|---:|---:|---:|---:|---|
+| write0_ps | 100% | 8/8 | 4 | 0.404396319 | 0.419904007 | 25% (2/8) | 0; Not evaluated |
+| write1_ps | 100% | 8/8 | 4 | 0.768077578 | 0.790149435 | 25% (2/8) | 0; Not evaluated |
+| active_energy_fj | 100% | 8/8 | 4 | 2.5003084 | 2.71973992 | 0% (0/8) | 0; Not evaluated |
+| quiet_power_uw | 100% | 8/8 | 4 | 0.00579109428 | 0.00748059087 | 0% (0/8) | 0; Not evaluated |
+| hold_snm_mv | 100% | 6/6 | 6 | 1.19505881 | 1.38801817 | 100% (6/6) | 0; Not evaluated |
+| read_snm_mv | 100% | 4/4 | 4 | 0.23814414 | 0.273608574 | 100% (4/4) | 0; Not evaluated |
+
+Units follow the target suffix: ps, fJ, uW or mV. Constant baselines already meet the SNM tolerance, so the 100% SNM fractions alone do not demonstrate useful predictive skill. No cross-target average is reported. The >=90% threshold is met on these tiny exploratory OOF sets only; independent-final-test performance remains unestablished.
+
+The reviewer independently refitted ridge plus StandardScaler in memory using every saved fold and reproduced all six stored OOF vectors exactly. Related modes/stored bits remain grouped by operating condition. Source hashes are unique within each target. No authoritative artifact was rewritten.
+
+Selected-case example, derived from the current model and recorded target table: active energy, 1 V, 27 C, long wordline (SEL1), `sel1updated.vcsv.txt`, case `14e634dff1ca06fd`: measured 202.83385857169995 fJ, predicted 203.11361956733774 fJ, selected-case relative error 0.13792618136231624%. This case **was included in full-data training**. It is neither an OOF prediction nor independent final validation. Zero measurements have no defined relative percentage; show absolute error instead.
+
+Runtime API `/performance` and download `/reports/performance.json` use `services/ml/performance.py`; `reports/performance.json` is the checked release snapshot. The API verifies frozen artifact equality, group-disjoint splits, source uniqueness and score consistency. Dashboard and all-target cards consume this report. The original `/evaluation` and its download remain unchanged. Observed OOF residual envelopes are not calibrated confidence intervals.

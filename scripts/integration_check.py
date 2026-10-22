@@ -15,6 +15,11 @@ assert get('health')['status']=='ok'
 stored=json.loads((ROOT/'data/derived/evaluation.json').read_text(encoding='utf-8'))
 assert get('evaluation')==stored
 assert get('reports/evaluation.json')==stored
+performance=get('performance')
+assert performance==get('reports/performance.json')==json.loads((ROOT/'reports/performance.json').read_text(encoding='utf-8'))
+example=post('predict',{'target':'active_energy_fj','features':{'vdd_v':1,'temp_c':27,'mode':1},'model_version':stored['model_version']})
+assert example['selected_case']['included_in_training'] is True
+assert abs(example['selected_case']['relative_error_pct']-.13792618136231624)<1e-10
 result=post('predict',{'target':'write1_ps','features':{'vdd_v':.95,'temp_c':55,'mode':1},'model_version':stored['model_version']})
 assert result['status']=='exploratory' and result['value']>0
 selection=post('compare',{'kind':'active','temp_c':27,'max_delay_ps':40})

@@ -69,10 +69,15 @@ Original exports in `CSVs/` are never edited, renamed or removed. The SHA-256 ba
 
 ## Application
 
-React / TypeScript / Vite / Tailwind / Recharts, with self-hosted Archivo, Inter and IBM Plex Mono fonts. Framer Motion handles brief transitions; GSAP animates circuit branding without blocking loading. Express proxies requests; Python/FastAPI owns numerical extraction, inference, SQLite job state and model artifacts. All defaults bind to loopback. No cloud, paid services, layout, fabrication or automatic circuit control.
+React / TypeScript / Vite / Tailwind / Recharts, with self-hosted Inter and IBM Plex Mono fonts. A dark command-centre overview combines selected-run metrics, provenance, historical REPLAY waveforms, functional connectivity and explicitly separate comparisons. The compact shell shows actual polled Node/Python health and stored dataset/model versions, with a refresh/reconnect action. Framer Motion handles brief transitions; GSAP animates circuit branding without blocking loading. Express proxies requests; Python/FastAPI owns numerical extraction, inference, SQLite job state and model artifacts. All defaults bind to loopback. No cloud, paid services, layout, fabrication or automatic circuit control.
+
+Frontend-only checks: `npm run check --workspace apps/web`, `npm run test --workspace apps/web`, `npm run build --workspace apps/web`. These do not retrain models. The scientific repeatability test in the full Python suite does regenerate artifacts; omit it when validating a visual-only change. Browser screenshot verification was unavailable in the redesign session.
 
 The build is available in `apps/web/dist` and `apps/api/dist`. The development workflow serves the application. For a local production-build preview, run `npm exec --workspace apps/web -- vite preview --host 127.0.0.1 --port 5173` alongside the Node and Python services; the Vite proxy also applies to preview.
 
 ## Read next
 
 PROJECT_GUIDE.md contains metric definitions, signal mappings, API contracts and a professor demonstration. DATA_AUDIT.md records file decisions. ADDITIONAL_SIMULATIONS_REQUIRED.md specifies the next evidence campaign; it does not claim that campaign was run. `progress.md` records actual checks and remaining work.
+
+## Performance and hosted demonstration
+Actual target-specific OOF tolerance scores, final-test separation, production settings and checks are documented in [DEPLOYMENT_READINESS.md](DEPLOYMENT_READINESS.md). Run `npm run dev` locally. Hosting is prepared only; nothing has been published. Vercel serves the frontend; two Render services serve immutable evidence/inference. Hosted processing/uploads are disabled; local workflows remain available.

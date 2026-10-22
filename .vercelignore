@@ -1,0 +1,14 @@
+CSVs/
+artifacts/
+data/
+services/
+tests/
+reports/
+deployment/
+.venv/
+.git/
+*.md
+*.png
+*.log
+.env*
+**/.env*

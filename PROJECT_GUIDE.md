@@ -104,3 +104,47 @@ Official documentation consulted for compatibility: [Vite requirements and build
 
 ## Remaining scientific work and unsupported claims
 The supported local software and measured analysis are implemented. ADDITIONAL_SIMULATIONS_REQUIRED.md specifies a separate, unexecuted nominal-condition campaign and reserved final conditions. Supply original ADE states/netlists/logs for independent provenance and convergence verification. No Cadence installation/run, new simulations, post-layout data, process yield, failure classifier, minimum retention voltage or calibrated prediction uncertainty is claimed. Browser visual smoke testing depends on available automation; actual check outcomes are maintained in progress.md.
+
+## Frontend command-centre redesign
+The frontend now uses a near-black instrumentation theme: 200 px desktop sidebar, 52 px status bar, 18 px content gutters, thin panel borders, 2–3 px corners, Inter text, IBM Plex Mono values, green/cyan signals and amber event indicators. Shared tokens, panel/status/metric components and the existing routes support the design. No scientific Python, Node API, original exports, derived data or models were changed or retrained for this work.
+
+Overview selects one accepted transient experiment. Main supply, temperature, wordline mode, write1 delay, energy and quiet power refer to that source; unsupported metrics say Unavailable. Source sample rows, file identity and quality flags are adjacent. Active-mode comparisons match the selected main voltage and temperature. Retention comparison is explicitly a separate experiment family at the selected temperature; its main supply and VRET axis are labeled. Paired modes/states remain grouped for scientific evaluation; the source-run count is not a waveform-row count or a claim of independent validation groups.
+
+The command centre fetches historical Q/QB/WL_OUT from the existing waveform endpoint, labeled REPLAY. Full trace and actual write-event time ranges, brush zoom, crossing markers, measurement windows and accessible tables remain available. Q is green, QB cyan and WL_OUT pale blue throughout. The static System connectivity diagram shows only recorded system paths and observed nodes; it is not a transistor schematic, physical layout or live circuit controller.
+
+Service indicators poll actual Node and Python health. The frontend-only Vite alias `/api/application-health` maps to Node's existing `/health`; `/api/health` continues to proxy scientific-service health. Polling is every15 seconds when idle and1.5 seconds while an actual processing job is active, with5-second request timeouts. The timestamp labeled CHK is the latest health check in UTC. Refresh/reconnect refetches evidence and health. Cached evidence remains available with an explicit disconnected warning when services cannot be reached. The APIs themselves are unchanged.
+
+Processing stages describe stored manifest, signal, extraction and exploratory-evaluation records. Only actual job stages activate processing indicators. Predict reflects actual requests in the current browser session; idle is NOT REQUESTED, and errors/unavailable responses remain visible. There is no automatic retraining, fake continuous pipeline or invented progress. Inference still runs through Node to Python.
+
+Below800 px the sidebar becomes an Escape-dismissable drawer with focus containment and an inert closed state. Metrics reduce from8 to4 to2 columns; analytical rows stack, and tables retain native horizontal scrolling. Panel/page transitions respect reduced-motion preferences; values are never tweened. The reference image was not available to inspect in this conversation, so the detailed written visual specification guided the design. Browser-control service was unavailable; desktop/mobile screenshots and rendered interaction checks remain unverified.
+
+Frontend verification: `npm run check --workspace apps/web`, `npm run test --workspace apps/web`, `npm run build --workspace apps/web`. Tests cover actual-data rendering, context isolation, missing values, recorded versus running stages, inference status, signal colors, measurement windows and text/accent contrast. Existing backend tests and read-only scientific fixtures were also run. The repeatability/training test was deliberately not run during this frontend-only change. Use `npm run dev` to launch; no new dependencies or setup commands are required.
+
+## Verified tolerance reporting (release preparation)
+
+Scores below are recalculated from the frozen out-of-fold predictions, not from selected-case fit. Tolerance is max(10% of absolute measurement, the predeclared absolute floor). Zero labels remain eligible; missing/nonfinite labels invalidate the report rather than becoming zero. No thresholds, authoritative models or historical evaluation artifacts changed.
+
+All scores are **exploratory model-selection validation**, not an untouched independent final test. The source records a predeclared ridge model; because results have been available during development, the release reports them conservatively as model-selection validation. Historical timing of the declaration cannot be independently certified.
+
+| Target | Within tolerance | Passing / cases | Groups | MAE | RMSE | Constant baseline | Final test |
+|---|---:|---:|---:|---:|---:|---:|---|
+| write0_ps | 100% | 8/8 | 4 | 0.404396319 | 0.419904007 | 25% (2/8) | 0; Not evaluated |
+| write1_ps | 100% | 8/8 | 4 | 0.768077578 | 0.790149435 | 25% (2/8) | 0; Not evaluated |
+| active_energy_fj | 100% | 8/8 | 4 | 2.5003084 | 2.71973992 | 0% (0/8) | 0; Not evaluated |
+| quiet_power_uw | 100% | 8/8 | 4 | 0.00579109428 | 0.00748059087 | 0% (0/8) | 0; Not evaluated |
+| hold_snm_mv | 100% | 6/6 | 6 | 1.19505881 | 1.38801817 | 100% (6/6) | 0; Not evaluated |
+| read_snm_mv | 100% | 4/4 | 4 | 0.23814414 | 0.273608574 | 100% (4/4) | 0; Not evaluated |
+
+Units follow the target suffix: ps, fJ, uW or mV. Constant baselines already meet the SNM tolerance, so the 100% SNM fractions alone do not demonstrate useful predictive skill. No cross-target average is reported. The >=90% threshold is met on these tiny exploratory OOF sets only; independent-final-test performance remains unestablished.
+
+The reviewer independently refitted ridge plus StandardScaler in memory using every saved fold and reproduced all six stored OOF vectors exactly. Related modes/stored bits remain grouped by operating condition. Source hashes are unique within each target. No authoritative artifact was rewritten.
+
+Selected-case example, derived from the current model and recorded target table: active energy, 1 V, 27 C, long wordline (SEL1), `sel1updated.vcsv.txt`, case `14e634dff1ca06fd`: measured 202.83385857169995 fJ, predicted 203.11361956733774 fJ, selected-case relative error 0.13792618136231624%. This case **was included in full-data training**. It is neither an OOF prediction nor independent final validation. Zero measurements have no defined relative percentage; show absolute error instead.
+
+Runtime API `/performance` and download `/reports/performance.json` use `services/ml/performance.py`; `reports/performance.json` is the checked release snapshot. The API verifies frozen artifact equality, group-disjoint splits, source uniqueness and score consistency. Dashboard and all-target cards consume this report. The original `/evaluation` and its download remain unchanged. Observed OOF residual envelopes are not calibrated confidence intervals.
+
+## Hosted release preparation
+See DEPLOYMENT_READINESS.md for exact configuration, private evidence provisioning, checks, persistence and publication blockers. Local processing remains unchanged. Hosted mode is an immutable evidence/inference demonstration: jobs and uploads are explicitly disabled; original exports and private source notes never enter the Vercel output. No deployment has been published.
+
+## Overview metric placement
+Model accuracy now occupies the top-strip slot previously used for quiet hold power, displaying the supplied 94.798 % with a compact User-provided / Unverified context. No stored evaluation artifact supports this supplied number; it does not change authoritative evaluation or model history. Active Energy Validation is restored to its original full-width panel below the metric strip, including the real OOF score, errors, baseline, tolerance and zero independent final-test count.

@@ -1,0 +1,42 @@
+# Preparation only. Deploy manually after approval; no automatic branch deployments.
+services:
+  - type: web
+    name: sams-ml
+    runtime: python
+    plan: free
+    autoDeployTrigger: "off"
+    buildCommand: pip install -r services/ml/requirements.txt && python scripts/evidence_bundle.py provision
+    startCommand: python -m uvicorn services.ml.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /ready
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.9
+      - key: SAMS_DEPLOYMENT
+        value: production
+      - key: ML_SERVICE_TOKEN
+        sync: false
+      - key: SAMS_EVIDENCE_URL
+        sync: false
+      - key: SAMS_EVIDENCE_SHA256
+        sync: false
+  - type: web
+    name: sams-api
+    runtime: node
+    plan: free
+    autoDeployTrigger: "off"
+    buildCommand: npm ci && npm run build --workspace apps/api
+    startCommand: node apps/api/dist/server.js
+    healthCheckPath: /api/ready
+    envVars:
+      - key: NODE_VERSION
+        value: 22.17.1
+      - key: NODE_ENV
+        value: production
+      - key: SAMS_DEPLOYMENT
+        value: production
+      - key: WEB_ORIGIN
+        sync: false
+      - key: ML_URL
+        sync: false
+      - key: ML_SERVICE_TOKEN
+        sync: false

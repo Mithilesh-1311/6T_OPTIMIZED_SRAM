@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-10-19T12:25:02.032133+00:00",
+  "scope": "Frontend redesign only; documentation and verification records updated",
+  "dataset_version": "56fd2a89b9e4",
+  "model_version": "314a27cadc8c",
+  "protected_files_verified_unchanged": 150,
+  "models_retrained": false,
+  "scientific_extraction_executed": false,
+  "checks": {
+    "frontend_types": "passed",
+    "frontend_tests": 5,
+    "backend_tests": 2,
+    "read_only_scientific_tests": 11,
+    "production_frontend_build": "passed",
+    "live_inference_and_report_integration": "passed",
+    "route_http_entry_points": 8,
+    "node_health": "connected",
+    "ml_health": "connected"
+  },
+  "review": {
+    "reference_fidelity": "Detailed written dark command-centre specification implemented; attachment unavailable, so no image comparison",
+    "readability_and_responsiveness": "Text/accent contrast tests passed; desktop/narrow CSS grids and keyboard drawer reviewed in source, not rendered",
+    "scientific_context": "One source per metric strip; separate active/retention comparison conditions; replay and unavailable labels; controls/windows/tables preserved",
+    "status_accuracy": "Actual Node/ML health polling; recorded artifacts distinguished from actual active job stages and session inference",
+    "functionality": "All existing route declarations retained; 8 HTTP entry points, scientific API behavior, live predictions and downloaded evaluation checked",
+    "independent_reviewer": "No existing reviewer agent available; no new reviewer spawned",
+    "browser_screenshots": "Unavailable: empty browser inventory and in-app browser unavailable"
+  },
+  "launch": "npm run dev",
+  "remaining": "Rendered desktop/narrow visual and interaction checks; reference-image comparison"
+}

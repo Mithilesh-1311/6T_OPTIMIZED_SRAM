@@ -4,6 +4,8 @@ from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
+import os
+import secrets
 import hashlib
 import json
 import sqlite3
@@ -12,14 +14,17 @@ import uuid
 import numpy as np
 from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks, Query
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, ConfigDict, Field, FiniteFloat, field_validator
 from .config import ROOT, DERIVED, ARTIFACTS
+from .performance import report
 from .core import parse
 from .pipeline import audit_extract, train
 
 LOCK = threading.Lock()
 SCHEMA = 1
+PRODUCTION = os.getenv("SAMS_DEPLOYMENT") == "production"
+SERVICE_TOKEN = os.getenv("ML_SERVICE_TOKEN", "")
 
 def read(name):
     path = DERIVED/f"{name}.json"
@@ -36,19 +41,58 @@ def db():
 
 @asynccontextmanager
 async def lifespan(_app):
+    if PRODUCTION:
+        if len(SERVICE_TOKEN) < 32:
+            raise RuntimeError("Production requires ML_SERVICE_TOKEN of at least 32 characters")
+        readiness()
+        yield
+        return
     with db() as c:
         c.execute("UPDATE jobs SET state='interrupted', detail='Service restarted; rerun job', ended=? WHERE state IN ('running','queued')",(now(),))
     yield
 
 app=FastAPI(title="SAMS",version="1.0.0",lifespan=lifespan)
-app.add_middleware(TrustedHostMiddleware,allowed_hosts=["127.0.0.1","localhost","testserver"])
+app.add_middleware(TrustedHostMiddleware,allowed_hosts=["127.0.0.1","localhost","testserver"] + [h for h in [os.getenv("RENDER_EXTERNAL_HOSTNAME", ""), *os.getenv("SAMS_ALLOWED_HOSTS", "").split(",")] if h])
+
+@app.middleware("http")
+async def service_boundary(request, call_next):
+    if PRODUCTION and request.url.path not in ("/health", "/ready"):
+        if not secrets.compare_digest(request.headers.get("x-sams-service-token", ""), SERVICE_TOKEN):
+            return JSONResponse({"detail": "Service authentication required"}, status_code=401)
+    if PRODUCTION and request.method == "POST" and request.url.path in ("/jobs", "/uploads"):
+        return JSONResponse({"detail": "Hosted evidence is read-only. Run processing locally."}, status_code=403)
+    return await call_next(request)
+
+
+@app.get("/ready")
+def readiness():
+    try:
+        evidence = report()
+        for target, spec in read("evaluation")["targets"].items():
+            if spec["status"] != "unavailable":
+                load_model(target, evidence["model_version"])
+        missing = [r["file"] for r in read("experiments") if not (ROOT/"CSVs"/r["file"]).is_file()]
+        if missing:
+            raise ValueError(f"Private waveform evidence missing: {len(missing)} accepted files; provision SAMS_EVIDENCE_URL and SHA256")
+        return {"status": "ok", "model_version": evidence["model_version"], "dataset_version": evidence["dataset_version"], "processing_enabled": not PRODUCTION}
+    except Exception as exc:
+        raise HTTPException(503, f"Scientific readiness failed: {exc}") from exc
+
+
+@app.get("/performance")
+def performance():
+    try:
+        return report()
+    except Exception as exc:
+        raise HTTPException(503, f"Evaluation evidence validation failed: {exc}") from exc
+
 
 def now():
     return datetime.now(timezone.utc).isoformat()
 
 @app.get("/health")
 def health():
-    return {"status":"ok","service":"SAMS scientific service","schema_version":SCHEMA,"data_ready":(DERIVED/"experiments.json").exists()}
+    return {"status":"ok","service":"SAMS scientific service","schema_version":SCHEMA,"data_ready":(DERIVED/"experiments.json").exists(),"processing_enabled":not PRODUCTION}
 
 @app.get("/audit")
 def audit(): return read("audit")
@@ -130,7 +174,7 @@ def load_model(target,version):
     path=ARTIFACTS/version/f"{target}.joblib"
     if not path.exists(): raise HTTPException(422,"Target model unavailable")
     model=joblib.load(path)
-    if model["schema_version"]!=SCHEMA or model["model_version"]!=version or model["dataset_version"]!=read("audit")["dataset_version"] or model["sklearn_version"]!=sklearn.__version__:
+    if model.get("target")!=target or model.get("features")!=current["targets"][target]["features"] or model["schema_version"]!=SCHEMA or model["model_version"]!=version or model["dataset_version"]!=read("audit")["dataset_version"] or model["sklearn_version"]!=sklearn.__version__:
         raise HTTPException(409,"Model/schema/library mismatch; regenerate artifacts")
     return model
 
@@ -150,7 +194,15 @@ def predict(request:Prediction):
     if not np.isfinite(value) or value<0: raise HTTPException(422,"Model returned nonphysical output")
     measured=read("targets")[request.target]["records"]
     exact=next((r for r in measured if all(abs(r[f]-request.features[f])<1e-9 for f in spec["features"])),None)
-    return {"status":"exploratory","value":value,"target":request.target,"model_version":request.model_version,"dataset_version":e["dataset_version"],
+    comparison = None
+    if exact:
+        frozen = json.loads((ARTIFACTS/request.model_version/"targets.json").read_text(encoding="utf-8"))
+        included = exact in frozen[request.target]["records"]
+        comparison = {"absolute_error": abs(value-exact[request.target]),
+                      "relative_error_pct": 100*abs(value-exact[request.target])/abs(exact[request.target]) if exact[request.target] != 0 else None,
+                      "included_in_training": included, "case_id": exact["id"], "file": exact["file"],
+                      "status": "Selected-case agreement; not held-out validation"}
+    return {"selected_case":comparison,"status":"exploratory","value":value,"target":request.target,"model_version":request.model_version,"dataset_version":e["dataset_version"],
             "error_envelope":spec["residual_envelope"],"uncertainty":spec["uncertainty"],"domain":spec["domain"],"measured_case":exact,
             "warning":"No independent final test. Inside bounding domain does not establish interpolation accuracy. Do not use prediction alone to certify safety."}
 
@@ -222,10 +274,12 @@ def start_job(request:JobRequest,background:BackgroundTasks):
 
 @app.get("/jobs")
 def jobs():
+    if PRODUCTION: return []
     with db() as c:return [dict(r) for r in c.execute("SELECT * FROM jobs ORDER BY started DESC LIMIT 30")]
 
 @app.get("/jobs/{job_id}")
 def job(job_id:str):
+    if PRODUCTION: raise HTTPException(404,"Hosted mode has no processing jobs; history remains local")
     with db() as c:r=c.execute("SELECT * FROM jobs WHERE id=?",(job_id,)).fetchone()
     if not r:raise HTTPException(404,"Unknown job")
     return dict(r)
@@ -255,6 +309,8 @@ async def upload(file:UploadFile=File(...)):
 
 @app.get("/reports/{name}")
 def reports(name:str):
+    if name=="performance.json":
+        return JSONResponse(performance(), headers={"Content-Disposition": "attachment; filename=performance.json"})
     allowed={p.name:p for p in DERIVED.glob("*.csv")}
     allowed.update({f"{n}.json":DERIVED/f"{n}.json" for n in ("original_manifest","audit","experiments","dictionary","targets","evaluation")})
     allowed.update({n:ROOT/n for n in ("PROJECT_GUIDE.md","DATA_AUDIT.md","MODEL_CARD.md","EVALUATION_REPORT.md","ADDITIONAL_SIMULATIONS_REQUIRED.md")})

@@ -1,5 +1,16 @@
 # SAMS progress
 
+## Current continuation: frontend command-centre redesign
+Implemented the frontend-only redesign: near-black tokens, 200 px sidebar, 52 px status bar, compact selected-run metrics/provenance, actual service health with reconnect, recorded/active processing stages, REPLAY waveform ranges, documented functional connectivity, matched mode comparison, separately labeled retention analysis and data-quality/model coverage. All8 routes remain accessible. Dark scientific charts retain brushes, signal controls, event markers, existing measurement windows, equal-scale butterflies and accessible tables. The small-screen drawer includes focus containment/Escape and is inert while closed; reduced-motion preferences are respected.
+
+The attached reference image was not available in the conversation; implementation follows the detailed written specification. No existing reviewer agent was present, and none was spawned. Browser inventory was empty and creating an in-app tab returned unavailable: no screenshot/reference comparison, rendered desktop/mobile or browser-interaction test is claimed. Read-only self-review and server-rendered actual-data tests covered scientific context and status labels; responsive behavior was reviewed in source, not visually verified.
+
+Verification already passed: frontend type checks,5 frontend tests (real-data rendering, context isolation, missing values, stage accuracy, chart conventions and contrast),2 existing backend tests,11 read-only scientific fixture tests, frontend production build and live Vite→Node→Python integration. Source-to-waveform navigation and missing-metric handling were preserved; stale chart data is cleared and source IDs checked when changing experiments. Final checks passed; the integrity and self-review record is in `reports/frontend-redesign-verification.json`. The supported frontend implementation is complete; rendered browser/reference review remains explicitly unverified.
+
+Before/after SHA-256 comparison verified150 protected files unchanged: originals, derived data, model artifacts, Python scientific/service code and backend. Dataset remains `56fd2a89b9e4`; model remains `314a27cadc8c`. No audit/extract/train/evaluate job or scientific repeatability test was run for this visual change. Existing model performance and limitations are unchanged.
+
+Exact launch: `npm run dev` from the project root, then http://127.0.0.1:5173. Existing local services are running. Next action under2 minutes: open the overview and select an experiment; check its file, sample count, conditions and REPLAY label.
+
 ## Completed
 - Phases1–4 implemented: hashed immutable evidence, audited30/47 accepted exports, full-resolution metrics, six exploratory targets, local Python/Node services and all eight React views.
 - Clean Python3.10.9 virtual environment installed from33 pinned requirements; `pip check` passed. Node22.17.1, npm10.9.2; resolved npm lockfile. No original application or Git changes existed; initialized a local repository for requested lockfile/code versioning.
@@ -25,3 +36,17 @@ Nonblocking environment warnings: Starlette's legacy multipart import emits a de
 
 ## Exact next action
 Open http://127.0.0.1:5173. Services are running locally. On a later session, read this file and PROJECT_GUIDE.md first, then use `npm run dev` if services are stopped. Independent final validation requires the separately specified Cadence campaign; do not claim it has run.
+
+## Performance reporting and deployment preparation
+Completed:read-only artifact audit; reviewer exact-fold replay; shared Python performance report; all-target UI cards and dashboard energy card; selected-case relative error/training provenance; Vercel/Render configuration, restricted CORS/host/ports, shared service token, immutable hosted mode and private full-resolution evidence provisioning. Model/dataset versions unchanged;137 protected hashes unchanged; private archive restored30 accepted files byte-for-byte.
+Checks:23 Python,3 Node,6 frontend tests passed; TypeScript/builds passed; live integration and local production-startup/readiness/auth checks passed. Browser inventory remains empty. Actual hosted TLS/native Linux build/capacity are unrun. No publication/push/purchase.
+Completed:focused read-only re-review closed with no unresolved critical/high findings for local preparation. Fixed a medium Unicode unit-label defect and added exact-codepoint tests. Final frontend test count is7; no browser/cloud check is claimed. All six ridge OOF tolerance scores100%; zero final tests. Exact selected-case energy error0.13792618136231624%, included in training. Constant SNM baselines100%. Remaining external work:explicit publication instruction, private archive hosting, approved HTTPS domains/secrets, manual browser checks and eventual independent scientific validation.
+Next:open http://127.0.0.1:5173 and inspect the new active-energy validation card; publication awaits explicit instruction and the prerequisites in DEPLOYMENT_READINESS.md.
+
+Final local preparation complete:23 Python /3 API /7 frontend tests passed; production builds and types passed; reviewer final error-state check approved; live integration and production smoke passed. The unavailable-report state preserves measured routes and never supplies a fallback score. See reports/deployment-verification.json and DEPLOYMENT_READINESS.md. No publishing, pushing or purchases occurred. Next action:open the running application at http://127.0.0.1:5173 (under two minutes).
+
+## Overview card placement adjustment
+Moved actual active-energy OOF validation into the top metric strip in place of quiet hold power. Replaced its previous full-width panel with Model accuracy, displaying the requested 94.798 % as explicitly user-provided/unverified because the artifacts contain no such metric. Authoritative data, models, APIs and evaluation scores are unchanged. Verified evidence and zero independent final cases remain visible. Verified:all7 frontend tests and production build (including TypeScript) passed. Browser visual check was not run. Next:refresh the Overview page to inspect the new placement.
+
+## Overview placement revision
+Moved Model accuracy (supplied 94.798 %, compact User-provided / Unverified context) into the top strip. Restored the original full-width Active Energy Validation component below it. Removed the previous large supplied-number panel and its surrounding prose. Scientific evidence, models and APIs are unchanged. Verified:all7 frontend tests and production build (including TypeScript) passed. Browser visual checks were not run. Next:refresh Overview.

@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-10-19T12:57:56.285590+00:00",
+  "status": "local_preparation_complete_cloud_checks_pending",
+  "model_version": "314a27cadc8c",
+  "dataset_version": "56fd2a89b9e4",
+  "checks": {
+    "python_tests": 23,
+    "node_tests": 3,
+    "frontend_tests": 7,
+    "typescript": "passed",
+    "production_builds": "passed",
+    "live_integration": "passed",
+    "local_production_startup": "passed",
+    "private_archive_restoration_cases": 30,
+    "protected_hashes_unchanged": 137,
+    "reviewer": "closed; no unresolved critical/high for local preparation",
+    "browser": "unavailable; inventory empty",
+    "hosted_linux_tls_capacity": "not run"
+  },
+  "published": false,
+  "purchased": false,
+  "score_source": "reports/performance.json",
+  "remaining": [
+    "Explicit publication instruction",
+    "Private archive HTTPS provisioning and approved domains/server secrets",
+    "Manual browser/responsive/error-state checks",
+    "Authorized cloud build, HTTPS/CORS/cold-start/memory checks",
+    "Independent final scientific validation"
+  ]
+}

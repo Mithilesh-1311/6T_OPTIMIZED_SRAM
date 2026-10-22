@@ -13,3 +13,5 @@ CSVs/
 /SAMS_End_to_End_Master_Guide*.md
 /*.png
 artifacts/*/
+
+deployment/*.zip
